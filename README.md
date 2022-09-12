@@ -33,26 +33,19 @@ Simple theme with nothing extra to use on a regular basis. Theme tested on Manja
 Download theme [here.](https://github.com/witalihirsch/Mono-gtk-theme/releases)
 
 ## Installation 
-Move theme folders to `/home/user/.themes/`
+Move theme folders to `~/.local/share/themes/`
 
 ### GTK4
-To install the Gtk4 theme move the contents of `gtk4.0` to `home/user/.config/gtk4.0`
+To install the Gtk4 theme move the contents of `gtk4.0` to `~/.config/gtk4.0`
 
 ### Flatpak
 To install themes on Flatpak apps use these commands:  
 ```pwsh
-sudo flatpak override --filesystem=$HOME/.themes
-```  
-```pwsh
-sudo flatpak override --env=GTK_THEME=MonoTheme
-```
-or
-```pwsh
-sudo flatpak override --env=GTK_THEME=MonoThemeDark
+flatpak override --filesystem=$HOME/.local/share/themes
 ```
 
 ### Gnome-shell
-To install the gnome-shell theme, move the entire theme folders to `/home/user/.themes`.
+To install the gnome-shell theme, move the entire theme folders to `~/.local/share/themes`.
 
 IMPORTANT! Take a snapshot of the system before use!  
 If you want the gnome-shell theme to extend to the lock and login screen, move the `gnome-shell-theme.gresource` file from `gnome-shell` folder to `/usr/share/gnome-shell/` with a replacement and restart system with `ALT+F2` and enter `r` or reboot/log out for Wayland session.  
