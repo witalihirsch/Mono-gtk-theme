@@ -43,7 +43,7 @@ To install themes on Flatpak apps use this command:
 ```pwsh
 sudo flatpak override --filesystem=$HOME/.local/share/themes:ro
 ```
-or use [flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) to give every application access to `~/.local/share/themes`
+or use [flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) to give every application access to `~/.local/share/themes:ro`
 
 ### Gnome-shell
 To install the gnome-shell theme, move the entire theme folders to `~/.local/share/themes`.
