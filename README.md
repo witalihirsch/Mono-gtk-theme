@@ -39,10 +39,11 @@ Move theme folders to `~/.local/share/themes/`
 To install the Gtk4 theme move the contents of `gtk4.0` to `~/.config/gtk4.0`
 
 ### Flatpak
-To install themes on Flatpak apps use these commands:  
+To install themes on Flatpak apps use this command:  
 ```pwsh
-flatpak override --filesystem=$HOME/.local/share/themes
+sudo flatpak override --filesystem=$HOME/.local/share/themes:ro
 ```
+or use [flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) to give every application access to `~/.local/share/themes`
 
 ### Gnome-shell
 To install the gnome-shell theme, move the entire theme folders to `~/.local/share/themes`.
