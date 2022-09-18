@@ -40,10 +40,15 @@ To install the Gtk4 theme move the contents of `gtk4.0` to `~/.config/gtk4.0`
 
 ### Flatpak
 To install themes on Flatpak apps use this command:  
+For gtk3 applications:
 ```pwsh
 sudo flatpak override --filesystem=$HOME/.local/share/themes:ro
 ```
-or use [flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) to give every application access to `~/.local/share/themes:ro`
+For gtk4/libadwaita applications:
+```pwsh
+sudo flatpak override --filesystem=$HOME/.config/gtk-4.0:ro
+```
+or use [flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) to give every application access to `~/.local/share/themes:ro` and `xdg-config/gtk-4.0:ro`
 
 ### Gnome-shell
 To install the gnome-shell theme, move the entire theme folders to `~/.local/share/themes`.
