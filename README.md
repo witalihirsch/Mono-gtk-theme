@@ -53,7 +53,7 @@ sudo flatpak override --env=GTK_THEME=MonoThemeDark
 ```
 
 ### GDM
-<span style="color:#D65451">IMPORTANT!</span> Take a snapshot of the system before use!  
+IMPORTANT❗️ Take a snapshot of the system before use!  
 If you want the gnome-shell theme to extend to the lock and login screen, move the `gnome-shell-theme.gresource` file from `gnome-shell` folder to `/usr/share/gnome-shell/` with a replacement and restart system with `ALT+F2` and enter `r` for Xorg or reboot/log out for Wayland session.  
 Command:
 ```pwsh
