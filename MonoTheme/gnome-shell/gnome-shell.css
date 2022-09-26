@@ -1278,6 +1278,10 @@ stage {
     margin: 1px;
 }
 
+.message .message-close-button StIcon {
+    icon-size: 1.09em;
+}
+
 .message .message-close-button:hover {
     color: #252525;
     background-color: #D65451;
@@ -1334,6 +1338,10 @@ stage {
     border-radius: 8px;
     color: #252525;
     transition: 200ms;
+}
+
+.message-media-control StIcon {
+    icon-size: 1.09em;
 }
 
 .message-media-control:hover {
@@ -1415,6 +1423,10 @@ stage {
 
 .candidate-page-button {
     padding: 6px;
+}
+
+.candidate-page-button StIcon {
+    icon-size: 1.09em;
 }
 
 .candidate-page-button-previous {
@@ -2965,10 +2977,36 @@ StWidget.focused .app-well-app-running-dot {
     border-radius: 0px 24px 24px 0px;
 }
 
-.page-navigation-arrow {
+.page-navigation-arrow>StIcon {
     margin: 6px;
+    padding: 18px;
     width: 24px;
     height: 24px;
+    border-radius: 99px;
+}
+
+.page-navigation-arrow:insensitive>StIcon {
+    transition-duration: 100ms;
+    background-color: transparent;
+    background-color: none;
+}
+
+.page-navigation-arrow:insensitive>StIcon:insensitive {
+    transition-duration: 100ms;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.page-navigation-arrow:hover>StIcon {
+    transition-duration: 100ms;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-navigation-arrow:active>StIcon {
+    transition-duration: 100ms;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 
@@ -3208,6 +3246,11 @@ StWidget.focused .app-well-app-running-dot {
     background-color: #f0f0f0;
     color: #252525;
     border-color: rgba(0, 0, 0, 0.7);
+}
+
+.keyboard-key.default-key:latched {
+    border-color: #1b82b3;
+    background-color: #1b82b3;
 }
 
 .keyboard-key:focus {
@@ -3731,6 +3774,10 @@ StWidget.focused .app-well-app-running-dot {
 
 .lg-dialog .actor-link:active {
     color: rgba(40, 40, 40, 0.5);
+}
+
+.lg-dialog .actor-link StIcon {
+    icon-size: 12px;
 }
 
 .lg-completions-text {
@@ -4597,135 +4644,253 @@ StWidget.focused .app-well-app-running-dot {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*QUICK SETTINGS*/
+
+
+.quick-settings {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+.quick-settings-grid {
+    spacing-rows: 18px;
+    spacing-columns: 12px;
+}
+
+.quick-toggle {
+    border-radius: 12px;
+    min-width: 11.5em;
+    max-width: 11.5em;
+    min-height: 44px;
+}
+
+.quick-toggle:checked {
+    transition-duration: 100ms;
+    background-color: #1b82b3;
+    color: white;
+}
+
+.quick-toggle:checked:focus {
+    box-shadow: none;
+}
+
+.quick-toggle:checked:hover,
+.quick-toggle:checked:focus {
+    background-color: #2094c9;
+    color: white;
+}
+
+.quick-toggle:checked:active {
+    background-color: #196b93;
+    color: white;
+}
+
+.quick-toggle:checked:insensitive {
+    transition-duration: 100ms;
+    background-color: rgba(27, 130, 179, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quick-toggle>StBoxLayout {
+    spacing: 6px;
+}
+
+.quick-toggle.button {
+    padding: 0;
+}
+
+.quick-toggle>StBoxLayout {
+    padding: 0 12px;
+}
+
+.quick-toggle .quick-toggle-label {
+    font-weight: bold;
+}
+
+.quick-toggle .quick-toggle-icon,
+.quick-toggle .quick-toggle-arrow {
+    icon-size: 1.09em;
+}
+
+.quick-menu-toggle:ltr>StBoxLayout {
+    padding-right: 0;
+}
+
+.quick-menu-toggle:rtl>StBoxLayout {
+    padding-left: 0;
+}
+
+.quick-menu-toggle .quick-toggle-arrow {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 8px;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:ltr {
+    border-radius: 0 12px 12px 0;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:rtl {
+    border-radius: 12px 0 0 12px;
+}
+
+.quick-slider {
+    padding: 0 6px;
+}
+
+.quick-slider>StBoxLayout {
+    spacing: 6px;
+}
+
+.quick-slider .slider-bin {
+    min-height: 16px;
+    padding: 6px;
+    border-radius: 99px;
+}
+
+.quick-slider .slider-bin:focus {
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.quick-slider .slider-bin:focus:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.quick-slider .slider-bin:focus:active {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.quick-slider .quick-toggle-icon {
+    icon-size: 1.09em;
+}
+
+.quick-slider .icon-button {
+    background-color: transparent;
+}
+
+.quick-toggle-menu {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #252525;
+    border-radius: 22px;
+    padding: 16.5px;
+    margin: 0 16.5px;
+}
+
+.quick-toggle-menu .header {
+    spacing-rows: 3px;
+    spacing-columns: 12px;
+    padding-bottom: 12px;
+}
+
+.quick-toggle-menu .header .icon {
+    icon-size: 1.635em;
+    border-radius: 999px;
+    padding: 9px;
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.quick-toggle-menu .header .icon.active {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.quick-toggle-menu-container {
+    padding: 12px 6px 0;
+}
+
+.quick-settings-system-item>StBoxLayout {
+    spacing: 12px;
+}
+
+.quick-settings-system-item .icon-button>StIcon {
+    -st-icon-style: symbolic;
+}
+
+.quick-settings-system-item .power-item {
+    min-height: 0;
+    min-width: 0;
+}
+
+.quick-settings-system-item .power-item:insensitive {
+    transition-duration: 100ms;
+    color: white;
+    background-color: rgba(40, 40, 40, 0.1);
+    background-color: transparent;
+}
+
+.nm-network-item .wireless-secure-icon {
+    icon-size: 0.545em;
+}
+
+
+/*ICON BUTTON IN QUICK SETTINGS*/
+
+
+.icon-button {
+    border-radius: 99px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 12px;
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: rgba(40, 40, 40, 0.05);
+}
+
+.icon-button:hover {
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.icon-button:active {
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: rgba(40, 40, 40, 0.05);
+}
+
+.icon-button:checked {
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.icon-button:checked:hover {
+    background-color: rgba(40, 40, 40, 0.15);
+}
+
+.icon-button:checked:active {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.icon-button:focus {
+    transition-duration: 100ms;
+    color: #252525;
+    background-color: rgba(40, 40, 40, 0.05);
+    box-shadow: none;
+}
+
+.icon-button:focus:hover {
+    background-color: rgba(40, 40, 40, 0.1);
+    box-shadow: none;
+}
+
+.icon-button:focus:active {
+    background-color: rgba(40, 40, 40, 0.05);
+    box-shadow: none;
+}
+
+.icon-button:insensitive {
+    transition-duration: 100ms;
+    color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(40, 40, 40, 0.05);
+}
+
+.icon-button>StIcon {
+    icon-size: 1.09em;
+}
