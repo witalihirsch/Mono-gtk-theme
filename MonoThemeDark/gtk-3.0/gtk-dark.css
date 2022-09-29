@@ -157,12 +157,12 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 decoration {
     border-radius: 12px 12px 0 0;
     border-width: 0px;
-    box-shadow: 0 3px 12px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px shade(mix(currentColor, #252525, 0.85), 0.86);
+    box-shadow: 0 3px 12px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px #404040;
     margin: 10px;
 }
 
 decoration:backdrop {
-    box-shadow: 0 3px 12px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 0 0 1px shade(mix(currentColor, #252525, 0.85), 0.7);
+    box-shadow: 0 3px 12px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 0 0 1px #404040;
     transition: 200ms ease-out;
 }
 
@@ -2308,8 +2308,6 @@ frame>border:backdrop,
 
 separator {
     background: rgba(255, 255, 255, 0.1);
-    min-width: 1px;
-    min-height: 1px;
 }
 
 separator:backdrop {
@@ -3715,6 +3713,11 @@ popover.menu>stack {
     margin: -6px;
 }
 
+
+
+/*POPOVER COMBOBOX*/
+
+
 popover.combo {
     padding: 0px;
 }
@@ -3724,63 +3727,20 @@ popover.combo list {
     background-color: transparent;
     min-width: 200px;
     margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 popover.combo list>row {
-    padding: 0px 8px 0px 8px;
-    min-height: 50px;
+    padding: 6px;
+    min-height: 5px;
+    margin-bottom: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
 }
 
 popover.combo list>row:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-popover.combo list>row:first-child {
-    border-top-left-radius: 8px;
-    -gtk-outline-top-left-radius: 7px;
-    border-top-right-radius: 8px;
-    -gtk-outline-top-right-radius: 7px;
-}
-
-popover.combo list>row:last-child {
-    border-bottom-left-radius: 8px;
-    -gtk-outline-bottom-left-radius: 7px;
-    border-bottom-right-radius: 8px;
-    -gtk-outline-bottom-right-radius: 7px;
-}
-
-popover.combo overshoot.top {
-    border-top-left-radius: 8px;
-    -gtk-outline-top-left-radius: 7px;
-    border-top-right-radius: 8px;
-    -gtk-outline-top-right-radius: 7px;
-}
-
-popover.combo overshoot.bottom {
-    border-bottom-left-radius: 8px;
-    -gtk-outline-bottom-left-radius: 7px;
-    border-bottom-right-radius: 8px;
-    -gtk-outline-bottom-right-radius: 7px;
-}
-
-popover.combo scrollbar.vertical {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-popover.combo scrollbar.vertical:dir(ltr) {
-    border-top-right-radius: 8px;
-    -gtk-outline-top-right-radius: 7px;
-    border-bottom-right-radius: 8px;
-    -gtk-outline-bottom-right-radius: 7px;
-}
-
-popover.combo scrollbar.vertical:dir(rtl) {
-    border-top-left-radius: 8px;
-    -gtk-outline-top-left-radius: 7px;
-    border-bottom-left-radius: 8px;
-    -gtk-outline-bottom-left-radius: 7px;
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
 }
 
 
@@ -9152,7 +9112,7 @@ list row button.image-button:not(.flat):checked:hover {
 }
 
 scrolledwindow list:not(.content) {
-    padding: 6px 0;
+    padding: 0px 0;
 }
 
 scrolledwindow list row {
@@ -9498,7 +9458,7 @@ list.content {
     background-color: rgba(255, 255, 255, 0.05);
     color: white;
     border-radius: 12px;
-    border: 0px solid transparent;
+    border: 1px solid transparent;
 }
 
 list.content list {
@@ -9511,7 +9471,7 @@ list.content:backdrop {
 }
 
 list.content list.nested>row:not(:active) {
-    border: 0px solid transparent;
+    border: 1px solid transparent;
 }
 
 list.content list.nested>row:not(:active):not(:hover):not(:selected),
@@ -9525,7 +9485,7 @@ list.content list.nested>row:not(:active):hover.activatable:not(:selected) {
 
 list.content>row {
     margin: 0;
-    padding: 0px;
+    padding: 2px;
     transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -9535,7 +9495,7 @@ list.content>row.expander:checked+row {
 }
 
 list.content>row:not(:last-child) {
-    border-bottom: 1px solid transparent;
+    border-bottom: 0px solid transparent;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -9567,12 +9527,7 @@ list.content>row:only-child {
 
 list.content>row:not(.expander):not(:active):hover.activatable:not(:selected),
 list.content>row.expander row.header:not(:active):hover.activatable:not(:selected) {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-list.content .horizontal spinbutton entry {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 list.view.frame {
@@ -10511,7 +10466,7 @@ XfdesktopIconView.view .rubberband {
 
 
 
-/*BROWSERS*/
+/*CHROMIUM*/
 
 
 window.background.chromium {
@@ -10524,8 +10479,33 @@ window.background.chromium>button {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-window.background.chromium textview.view {
-    background-color: #252525;
+window.background.chromium entry.chromium,
+window.background.chromium entry.chromium:focus {
+    border-image: none;
+    color: white;
+}
+
+window.background.chromium>textview.view,
+window.background.chromium textview {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+window.background.chromium>menubar {
+    background-color: #333333;
+}
+
+window.background.chromium menu menuitem {
+    border-radius: 0;
+}
+
+
+
+/*FIREFOX*/
+
+
+#MozillaGtkWidget {
+    background-color: #333333;
 }
 
 #MozillaGtkWidget.background button {
@@ -10543,7 +10523,78 @@ window.background.chromium textview.view {
 }
 
 #MozillaGtkWidget>widget border {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: #606060;
+}
+
+#MozillaGtkWidget>widget>scrolledwindow>textview text:selected,
+#MozillaGtkWidget>widget>scrolledwindow>textview text:selected:focus,
+#MozillaGtkWidget>widget>scrolledwindow>textview text selection {
+    background-color: #606060;
+    color: white;
+}
+
+#MozillaGtkWidget>widget>scrolledwindow>textview text:disabled:selected,
+#MozillaGtkWidget>widget>scrolledwindow>textview text selection:disabled {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#MozillaGtkWidget scrollbar {
+    background: none;
+    border: none;
+}
+
+#MozillaGtkWidget scrollbar slider {
+    background-color: gray;
+}
+
+#MozillaGtkWidget scrollbar slider:hover {
+    background-color: #9a9a9a;
+}
+
+#MozillaGtkWidget scrollbar slider:hover:active {
+    background-color: #b3b3b3;
+}
+
+#MozillaGtkWidget scrollbar slider:disabled {
+    background-color: transparent;
+}
+
+#MozillaGtkWidget>window.background>menu {
+    border: none;
+    background-color: #333333;
+    border-radius: 2px;
+}
+
+#MozillaGtkWidget>window.background>menu>separator {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#MozillaGtkWidget>widget text {
+    background-color: #333333;
+}
+
+#MozillaGtkWidget>widget text:selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#MozillaGtkWidget>widget separator {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#MozillaGtkWidget>widget>scrolledwindow>textview {
+    background-color: #333333;
+}
+
+#MozillaGtkWidget>widget>scrolledwindow>textview text {
+    background-color: transparent;
+    color: white;
+}
+
+#MozillaGtkWidget menu {
+    border: none;
 }
 
 
