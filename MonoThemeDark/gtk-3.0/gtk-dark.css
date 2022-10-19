@@ -534,13 +534,13 @@ avatar:hover {
 
 
 
-/*SEELCTION COLOR*/
+/*SELECTIONS*/
 
 
 headerbar entry selection,
 .titlebar entry selection,
-.view:selected:focus,
 .view:selected,
+.view:selected:focus,
 .nautilus-window notebook:selected:focus,
 .nautilus-window notebook:selected,
 .nautilus-window notebook>stack:selected:not(:only-child),
@@ -565,38 +565,11 @@ spinbutton:not(.vertical) selection,
 treeview.view:selected:focus,
 treeview.view:selected {
     color: white;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #606060;
 }
 
 label:selected,
-.selection-mode button.titlebutton,
-headerbar entry selection,
-.titlebar entry selection,
-.view:selected:focus,
-.view:selected,
-.nautilus-window notebook:selected:focus,
-.nautilus-window notebook:selected,
-.nautilus-window notebook>stack:selected:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar:selected,
-.view text:selected:focus,
-textview text:selected:focus,
-.view text:selected,
-textview text:selected,
-.view text selection:focus,
-.view text selection,
-textview text selection:focus,
-textview text selection,
-iconview:selected:focus,
-iconview:selected,
-iconview text selection:focus,
-iconview text selection,
-flowbox flowboxchild:selected,
-entry selection,
-modelbutton.flat:selected,
-.menuitem.button.flat:selected,
-spinbutton:not(.vertical) selection,
-treeview.view:selected:focus,
-treeview.view:selected {
+.selection-mode button.titlebutton {
     color: white;
 }
 
@@ -605,6 +578,7 @@ label:backdrop:selected,
 .selection-mode button.titlebutton:backdrop,
 .titlebar entry selection:backdrop,
 .view:backdrop:selected,
+.view:backdrop:selected:focus,
 .nautilus-window notebook:backdrop:selected,
 .nautilus-window notebook>stack:backdrop:selected:not(:only-child),
 .nautilus-window notebook>stack:not(:only-child) searchbar:backdrop:selected,
@@ -625,7 +599,7 @@ modelbutton.flat:backdrop:selected,
 spinbutton:not(.vertical) selection:backdrop,
 treeview.view:backdrop:selected {
     color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #404040;
 }
 
 label:backdrop selection:disabled,
@@ -647,7 +621,101 @@ modelbutton.flat:backdrop:disabled:selected,
 .menuitem.button.flat:backdrop:disabled:selected,
 spinbutton:not(.vertical) selection:backdrop:disabled {
     color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #404040;
+}
+
+.view,
+iconview,
+.nautilus-window notebook,
+.nautilus-window notebook>stack:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar,
+.view text,
+iconview text,
+textview text {
+    color: white;
+    background-color: #252525;
+}
+
+.view:backdrop,
+iconview:backdrop,
+.nautilus-window notebook:backdrop,
+.nautilus-window notebook>stack:backdrop:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar:backdrop,
+.view text:backdrop,
+iconview text:backdrop,
+textview text:backdrop {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #282828;
+}
+
+.view:backdrop:disabled,
+iconview:backdrop:disabled,
+.nautilus-window notebook:backdrop:disabled,
+.nautilus-window notebook>stack:backdrop:disabled:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar:backdrop:disabled,
+.view text:backdrop:disabled,
+iconview text:backdrop:disabled,
+textview text:backdrop:disabled {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.view:disabled,
+iconview:disabled,
+.nautilus-window notebook:disabled,
+.nautilus-window notebook>stack:disabled:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar:disabled,
+.view text:disabled,
+iconview text:disabled,
+textview text:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #252525;
+}
+
+.view:selected:focus,
+iconview:selected:focus,
+.view:selected,
+iconview:selected,
+.nautilus-window notebook:selected:focus,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.nautilus-window notebook:selected,
+.nautilus-window notebook>stack:selected:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar:selected,
+.view text:selected,
+iconview text:selected,
+textview text:selected {
+    border-radius: 6px;
+    background-color: #606060;
+}
+
+iconview:selected:focus,
+iconview:selected,
+.nautilus-window notebook:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.nautilus-window notebook:selected,
+.nautilus-window notebook>stack:selected:not(:only-child),
+.nautilus-window notebook>stack:not(:only-child) searchbar:selected,
+iconview text:selected,
+textview text:selected {
+    border-radius: 6px;
+    background-color: #606060;
+}
+
+textview border {
+    background-color: transparent;
+}
+
+.rubberband,
+rubberband,
+XfdesktopIconView.view .rubberband,
+.content-view rubberband,
+.content-view .rubberband,
+treeview.view rubberband,
+flowbox rubberband {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -6151,88 +6219,6 @@ treeview entry:focus {
 
 
 
-/*TEXTVIEW, ICONVIEW*/
-
-
-.view,
-iconview,
-.nautilus-window notebook,
-.nautilus-window notebook>stack:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar,
-.view text,
-iconview text,
-textview text {
-    color: white;
-    background-color: transparent;
-}
-
-iconview:selected:focus,
-iconview:selected,
-.nautilus-window notebook:selected:focus,
-iconview text:selected:focus,
-textview text:selected:focus,
-.nautilus-window notebook:selected,
-.nautilus-window notebook>stack:selected:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar:selected,
-iconview text:selected,
-textview text:selected {
-    border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.view:backdrop,
-iconview:backdrop,
-.nautilus-window notebook:backdrop,
-.nautilus-window notebook>stack:backdrop:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar:backdrop,
-.view text:backdrop,
-iconview text:backdrop,
-textview text:backdrop {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-}
-
-.view:backdrop:disabled,
-iconview:backdrop:disabled,
-.nautilus-window notebook:backdrop:disabled,
-.nautilus-window notebook>stack:backdrop:disabled:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar:backdrop:disabled,
-.view text:backdrop:disabled,
-iconview text:backdrop:disabled,
-textview text:backdrop:disabled {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-}
-
-.view:disabled,
-iconview:disabled,
-.nautilus-window notebook:disabled,
-.nautilus-window notebook>stack:disabled:not(:only-child),
-.nautilus-window notebook>stack:not(:only-child) searchbar:disabled,
-.view text:disabled,
-iconview text:disabled,
-textview text:disabled {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: transparent;
-}
-
-textview border {
-    background-color: transparent;
-}
-
-.rubberband,
-rubberband,
-XfdesktopIconView.view .rubberband,
-.content-view rubberband,
-.content-view .rubberband,
-treeview.view rubberband,
-flowbox rubberband {
-    border: 0px solid transparent;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-
 /*SPINBUTTON*/
 
 
@@ -10945,4 +10931,7 @@ sq_button.small {
 /*bg in terminal, in market apps*/
 @define-color theme_base_color rgba(255, 255, 255, 0.05);
 
+/*terminator*/
+@define-color window_bg_color #252525;
+@define-color theme_bg_color #252525;
 
