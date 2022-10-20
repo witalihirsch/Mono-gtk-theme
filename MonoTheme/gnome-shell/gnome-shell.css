@@ -2645,8 +2645,8 @@ StEntry StLabel.hint-text {
 }
 
 .dash-label {
-    color: white;
-    background-color: transparent;
+    color: #252525;
+    background-color: #f0f0f0;
     border-radius: 6px;
     padding: 6px 12px;
     text-align: center;
