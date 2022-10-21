@@ -3351,6 +3351,8 @@ headerbar {
     background-image: none;
     border-color: transparent;
     border-bottom: 1px solid transparent;
+    padding-right: 2px;
+    padding-left: 3px;
 }
 
 headerbar:backdrop {
@@ -3501,9 +3503,9 @@ windowcontrols button.maximize,
 windowcontrols button.minimize {
     min-width: 16px;
     min-height: 16px;
-    padding: 2px;
+    padding: 3px;
     margin: 0;
-    margin-right: -3px;
+    margin-right: -4px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;

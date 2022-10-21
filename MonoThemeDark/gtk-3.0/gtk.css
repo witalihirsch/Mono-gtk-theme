@@ -3821,6 +3821,8 @@ headerbar {
     padding: 0 6px;
     min-height: 46px;
     background: #252525;
+    padding-left: 10px;
+    padding-right: 15px;
 }
 
 .titlebar:backdrop:not(headerbar),
@@ -4748,9 +4750,6 @@ headerbar button.titlebutton.minimize {
     background-image: none;
 }
 
-headerbar button.titlebutton.close {
-    margin-right: 6px;
-}
 
 headerbar button.titlebutton.close:hover {
     background-image: none;
