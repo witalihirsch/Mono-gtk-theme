@@ -7599,7 +7599,8 @@ tabbar .box {
     min-height: 38px;
     background-color: transparent;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    padding-bottom: 5px;
     box-shadow: none;
 }
 
@@ -7673,6 +7674,7 @@ tabbar tab {
     transition: background 150ms ease-in-out;
     background-color: rgba(255, 255, 255, 0.05);
     background-clip: padding-box;
+    border-radius: 6px;
 }
 
 tabbar tab:hover {
@@ -7969,7 +7971,7 @@ searchbar>revealer>box splitbutton:not(.raised):not(.suggested-action):not(.dest
 .toolbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>separator,
 headerbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>separator,
 splitbutton.flat>separator {
-    background: rgba(255, 255, 255, 0.05);
+    background: transparent;
 }
 
 actionbar>revealer>box splitbutton:hover:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque),
@@ -7987,7 +7989,7 @@ headerbar splitbutton:checked:not(.raised):not(.suggested-action):not(.destructi
 splitbutton.flat:hover,
 splitbutton.flat:active,
 splitbutton.flat:checked {
-    background: rgba(255, 255, 255, 0.1);
+    background: transparent;
 }
 
 actionbar>revealer>box splitbutton:hover:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>separator,
@@ -8005,7 +8007,7 @@ headerbar splitbutton:checked:not(.raised):not(.suggested-action):not(.destructi
 splitbutton.flat:hover>separator,
 splitbutton.flat:active>separator,
 splitbutton.flat:checked>separator {
-    background: rgba(255, 255, 255, 0.1);
+    background: transparent;
 }
 
 actionbar>revealer>box splitbutton:focus-within:focus-visible:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>separator,
@@ -8019,14 +8021,26 @@ splitbutton.flat:focus-within:focus-visible>separator {
 actionbar>revealer>box splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>button,
 searchbar>revealer>box splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>button,
 .toolbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>button,
-headerbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>button,
 actionbar>revealer>box splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>menubutton>button,
 searchbar>revealer>box splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>menubutton>button,
 .toolbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>menubutton>button,
-headerbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>menubutton>button,
 splitbutton.flat>button,
 splitbutton.flat>menubutton>button {
     border-radius: 6px;
+}
+
+headerbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>button {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+headerbar splitbutton:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque)>menubutton>button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 splitbutton.suggested-action {
