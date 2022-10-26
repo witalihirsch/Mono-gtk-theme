@@ -4103,8 +4103,6 @@ emoji-completion-row:active {
 button.emoji-section.image-button:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque),
 menubutton.circular>button,
 button.circular {
-    min-width: 34px;
-    min-height: 34px;
     padding: 0;
     border-radius: 9999px;
 }
@@ -7450,7 +7448,6 @@ headerbar button,
 actionbar>revealer>box menubutton,
 searchbar>revealer>box menubutton,
 .toolbar menubutton,
-headerbar menubutton,
 actionbar>revealer>box scalebutton,
 searchbar>revealer>box scalebutton,
 .toolbar scalebutton,
@@ -8197,3 +8194,67 @@ leaflet>shadow.down {
 }
 
 
+
+/*FILES*/
+
+
+#NautilusViewCell clamp box {
+  margin: 0;
+  border-spacing: 0;
+}
+
+#NautilusQueryEditor > menubutton > button {
+  min-width: 16px;
+  min-height: 16px;
+  margin: 0;
+}
+
+#NautilusQueryEditor > text {
+  margin: 0;
+}
+
+.nautilus-window .floating-bar {
+  min-height: 32px;
+  padding: 0;
+  margin: 6px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgba(40, 40, 40, 0.1);
+  color: #252525;
+  box-shadow: none;
+}
+
+.nautilus-window .floating-bar button {
+  margin: 5px;
+  color: #252525;
+}
+
+#NautilusPathBar {
+  background-color: rgba(40, 40, 40, 0.05);
+  border-radius: 6px;
+  margin: 0px 0;
+}
+
+#NautilusPathBar #NautilusPathButton {
+  margin: 2px 2px;
+  border-radius: 6px;
+  background-color: transparent;
+  min-height: 0;
+}
+
+#NautilusPathBar #NautilusPathButton:hover {
+  background-color: rgba(40, 40, 40, 0.1);
+}
+
+#NautilusPathBar #NautilusPathButton:active {
+  background-color: rgba(40, 40, 40, 0.05);
+}
+
+#NautilusPathBar #NautilusPathButton.current-dir {
+  color: #252525;
+}
+
+#NautilusPathBar #NautilusPathButton.current-dir:hover, #NautilusPathBar #NautilusPathButton.current-dir:active {
+  background: none;
+  box-shadow: none;
+}
