@@ -65,6 +65,16 @@ Example:
 sudo cp gnome-shell-theme.gresource ~/Documents
 ``` 
 
+## Firefox
+[Install Firefox Theme](https://github.com/witalihirsch/Mono-firefox-theme)
+
+<p align="center"><b>Firefox</b></p>
+<p align="center">
+  <img alt="apps" src="images/firefox.png">
+</p>
+
+
+
 ### Using
 The dark and light appearance of Gtk4 is changed by renaming the desired file to `gtk.css` in `.config/gtk4.0`. At the moment there is no or I haven't found another way to change the color.  
 To change the light or dark theme of `Gtk3` apps and `Gnome-shell` use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).
