@@ -49,24 +49,24 @@ window.csd:backdrop {
     box-shadow: 0 3px 3px 0 rgba(36, 36, 36, 0.1), 0 8px 8px 0 transparent, 0 16px 16px 0 transparent, 0 0 0 2px rgba(36, 36, 36, 0.1), 0 0 0 1px rgba(36, 36, 36, 0.1);
 }
 
-window.csd.tiled, 
-window.csd.tiled-top, 
-window.csd.tiled-left, 
-window.csd.tiled-right, 
-window.csd.tiled-bottom { 
-    border-radius: 0; 
-    outline: none; 
-    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0,0.15), 
-    0 0 0 20px transparent; 
+window.csd.tiled,
+window.csd.tiled-top,
+window.csd.tiled-left,
+window.csd.tiled-right,
+window.csd.tiled-bottom {
+    border-radius: 0;
+    outline: none;
+    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0, 0.15),
+        0 0 0 20px transparent;
 }
 
-window.csd.tiled:backdrop, 
-window.csd.tiled-top:backdrop, 
-window.csd.tiled-left:backdrop, 
-window.csd.tiled-right:backdrop, 
-window.csd.tiled-bottom:backdrop { 
-    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0,0.15), 
-    0 0 0 20px transparent; 
+window.csd.tiled:backdrop,
+window.csd.tiled-top:backdrop,
+window.csd.tiled-left:backdrop,
+window.csd.tiled-right:backdrop,
+window.csd.tiled-bottom:backdrop {
+    box-shadow: 0 0 0 1px alpha(0, 0, 0, 0, 0.15),
+        0 0 0 20px transparent;
 }
 
 window.csd.popup {
@@ -83,9 +83,9 @@ window.maximized,
 window.fullscreen,
 window:backdrop {
     outline-width: 1px;
-    border-radius: 0; 
-    outline: none; 
-    box-shadow: none; 
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
     transition: none;
 }
 
@@ -160,7 +160,7 @@ label:disabled selection {
 
 
 cell {
-  border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -1905,7 +1905,7 @@ window.dialog.message.csd .titlebar {
     background-color: #252525;
 }
 
-messagedialog.csd.background  {
+messagedialog.csd.background {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1958,7 +1958,7 @@ window.dialog.message.csd .dialog-action-area>button {
 
 window.dialog.message.csd .dialog-action-area>button:focus:focus-visible,
 .osd window.dialog.message.csd .dialog-action-area>button:focus:focus-visible,
-window.dialog.message.csd .osd .dialog-action-area>button:focus:focus-visible  {
+window.dialog.message.csd .osd .dialog-action-area>button:focus:focus-visible {
     outline-color: transparent;
 }
 
@@ -2746,7 +2746,7 @@ combobox>.linked:not(.vertical)>entry:hover {
 }
 
 dropdown>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop,
-combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop, 
+combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop,
 dropdown>.linked:not(.vertical)>entry:not(:only-child):first-child:disabled,
 combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:disabled {
     transition: 200ms;
@@ -4104,6 +4104,8 @@ emoji-completion-row:active {
 button.emoji-section.image-button:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque),
 menubutton.circular>button,
 button.circular {
+    min-width: 34px;
+    min-height: 34px;
     padding: 0;
     border-radius: 9999px;
 }
@@ -4398,9 +4400,7 @@ filechooser pathbar>button.slider-button {
 /*RICH LIST*/
 
 
-.rich-list {
-
-}
+.rich-list {}
 
 .rich-list>row {
     min-height: 32px;
@@ -5065,9 +5065,7 @@ spinbutton>button.image-button.down:not(.flat):not(.raised):not(.suggested-actio
     border-color: transparent;
 }
 
-spinbutton:not(.vertical) {
-
-}
+spinbutton:not(.vertical) {}
 
 spinbutton:not(.vertical)>text {
     min-width: 28px;
@@ -5099,9 +5097,7 @@ spinbutton:not(.vertical)>button.image-button.down:not(.flat):not(.raised):not(.
     border-radius: 6px 0 0 6px;
 }
 
-spinbutton.vertical {
-
-}
+spinbutton.vertical {}
 
 spinbutton.vertical>text {
     min-height: 30px;
@@ -7244,7 +7240,7 @@ button.color {
 }
 
 button.color>colorswatch:only-child,
-button.color>colorswatch:only-child>overlay  {
+button.color>colorswatch:only-child>overlay {
     border-radius: 5px;
 }
 
@@ -7448,6 +7444,7 @@ headerbar button,
 actionbar>revealer>box menubutton,
 searchbar>revealer>box menubutton,
 .toolbar menubutton,
+headerbar menubutton,
 actionbar>revealer>box scalebutton,
 searchbar>revealer>box scalebutton,
 .toolbar scalebutton,
@@ -8199,62 +8196,68 @@ leaflet>shadow.down {
 
 
 #NautilusViewCell clamp box {
-  margin: 0;
-  border-spacing: 0;
+    margin: 0;
+    border-spacing: 0;
 }
 
-#NautilusQueryEditor > menubutton > button {
-  min-width: 16px;
-  min-height: 16px;
-  margin: 0;
+#NautilusQueryEditor>menubutton>button {
+    min-width: 16px;
+    min-height: 16px;
+    margin: 0;
 }
 
-#NautilusQueryEditor > text {
-  margin: 0;
+#NautilusQueryEditor>text {
+    margin: 0;
 }
 
 .nautilus-window .floating-bar {
-  min-height: 32px;
-  padding: 0;
-  margin: 6px;
-  border-radius: 8px;
-  background-color: #333333;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  box-shadow: none;
+    min-height: 32px;
+    padding: 0;
+    margin: 6px;
+    border-radius: 8px;
+    background-color: #333333;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: none;
 }
 
 .nautilus-window .floating-bar button {
-  margin: 5px;
-  color: white;
+    margin: 5px;
+    color: white;
 }
 
 #NautilusPathBar {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
-  margin: 0px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin: 0px 0;
+}
+
+#NautilusPathBar menubutton {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #NautilusPathBar #NautilusPathButton {
-  margin: 2px 2px;
-  border-radius: 6px;
-  background-color: transparent;
-  min-height: 0;
+    margin: 2px 2px;
+    border-radius: 6px;
+    background-color: transparent;
+    min-height: 0;
 }
 
 #NautilusPathBar #NautilusPathButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #NautilusPathBar #NautilusPathButton:active {
-  background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 #NautilusPathBar #NautilusPathButton.current-dir {
-  color: white;
+    color: white;
 }
 
-#NautilusPathBar #NautilusPathButton.current-dir:hover, #NautilusPathBar #NautilusPathButton.current-dir:active {
-  background: none;
-  box-shadow: none;
+#NautilusPathBar #NautilusPathButton.current-dir:hover,
+#NautilusPathBar #NautilusPathButton.current-dir:active {
+    background: none;
+    box-shadow: none;
 }

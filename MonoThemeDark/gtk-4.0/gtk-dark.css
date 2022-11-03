@@ -4103,6 +4103,8 @@ emoji-completion-row:active {
 button.emoji-section.image-button:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque),
 menubutton.circular>button,
 button.circular {
+    min-width: 34px;
+    min-height: 34px;
     padding: 0;
     border-radius: 9999px;
 }
@@ -7448,6 +7450,7 @@ headerbar button,
 actionbar>revealer>box menubutton,
 searchbar>revealer>box menubutton,
 .toolbar menubutton,
+headerbar menubutton,
 actionbar>revealer>box scalebutton,
 searchbar>revealer>box scalebutton,
 .toolbar scalebutton,
@@ -8233,6 +8236,11 @@ leaflet>shadow.down {
   background-color: rgba(40, 40, 40, 0.05);
   border-radius: 6px;
   margin: 0px 0;
+}
+
+#NautilusPathBar menubutton {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #NautilusPathBar #NautilusPathButton {
