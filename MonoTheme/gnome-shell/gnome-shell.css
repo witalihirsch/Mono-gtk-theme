@@ -114,13 +114,12 @@ stage {
     text-align: center;
     font-weight: bold;
     color: #252525;
-    background-color: transparent;
-    border: 1px solid transparent;
+    background-color: #f0f0f0;
+    border: 1px solid rgba(40, 40, 40, 0.1);
     border-radius: 8px;
     spacing: 12px;
-    padding: 12px 18px;
-    margin-bottom: 4em;
-    margin-bottom: 62px;
+    padding: 0px 18px;
+    margin-bottom: 9em;
 }
 
 .osd-window>* {
@@ -128,7 +127,7 @@ stage {
 }
 
 .osd-window StIcon {
-    icon-size: 1.5em;
+    icon-size: 1.2em;
 }
 
 .osd-window StLabel:ltr {
@@ -192,7 +191,7 @@ stage {
 
 
 #panel {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     height: 2.2em;
     transition-duration: 250ms;
@@ -337,7 +336,7 @@ stage {
 #panel:overview .panel-button {
     box-shadow: none;
     font-weight: bold;
-    color: #252525;
+    color: white;
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     transition-duration: 150ms;
@@ -348,7 +347,7 @@ stage {
 #panel.unlock-screen .panel-button:hover,
 #panel.login-screen .panel-button:hover,
 #panel:overview .panel-button:hover {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.1);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 #panel.unlock-screen .panel-button:active,
@@ -363,7 +362,7 @@ stage {
 #panel:overview .panel-button:overview,
 #panel:overview .panel-button:focus,
 #panel:overview .panel-button:checked {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.05);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.05);
 }
 
 #panel.unlock-screen .panel-button:active:hover,
@@ -378,7 +377,7 @@ stage {
 #panel:overview .panel-button:overview:hover,
 #panel:overview .panel-button:focus:hover,
 #panel:overview .panel-button:checked:hover {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.1);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 /*clock lockscreen*/
@@ -409,7 +408,7 @@ stage {
 #panel.unlock-screen .panel-button:hover.clock-display .clock,
 #panel.login-screen .panel-button:hover.clock-display .clock,
 #panel:overview .panel-button:hover.clock-display .clock {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.1);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 #panel.unlock-screen .panel-button:active.clock-display,
@@ -439,7 +438,7 @@ stage {
 #panel:overview .panel-button:overview.clock-display .clock,
 #panel:overview .panel-button:focus.clock-display .clock,
 #panel:overview .panel-button:checked.clock-display .clock {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.05);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.05);
 }
 
 #panel.unlock-screen .panel-button:active:hover.clock-display,
@@ -469,7 +468,7 @@ stage {
 #panel:overview .panel-button:overview:hover.clock-display .clock,
 #panel:overview .panel-button:focus:hover.clock-display .clock,
 #panel:overview .panel-button:checked:hover.clock-display .clock {
-    box-shadow: inset 0 0 0 100px rgba(40, 40, 40, 0.1);
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 /*record lockscreen*/
@@ -1529,7 +1528,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-type-button:checked {
     transition: 200ms;
     color: #252525;
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.1);
 }
 
 .screenshot-ui-show-pointer-button:outlined:hover,
@@ -1537,7 +1536,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-show-pointer-button:checked:hover,
 .screenshot-ui-type-button:checked:hover {
     transition: 200ms;
-    background-color: rgba(40, 40, 40, 0.1);
+    background-color: rgba(40, 40, 40, 0.15);
 }
 
 .screenshot-ui-show-pointer-button:outlined:active,
@@ -1545,7 +1544,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-show-pointer-button:checked:active,
 .screenshot-ui-type-button:checked:active {
     transition: 200ms;
-    background-color: rgba(40, 40, 40, 0.05);
+    background-color: rgba(40, 40, 40, 0.1);
 }
 
 .screenshot-ui-show-pointer-button:focus,
@@ -1736,7 +1735,7 @@ StScrollBar StButton#hhandle:active {
 
 .screenshot-ui-area-selector-handle {
     border-radius: 99px;
-    background-color: #aaaaaa;
+    background-color: white;
     box-shadow: none;
     width: 18px;
     height: 18px;
@@ -1769,11 +1768,11 @@ StScrollBar StButton#hhandle:active {
 }
 
 .screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -2554,7 +2553,7 @@ StEntry StLabel.hint-text {
 }
 
 .dash-background {
-    background-color: #969696;
+    background-color: #f0f0f0;
     border-radius: 28px;
     padding: 12px;
     spacing: 6px;
@@ -2589,46 +2588,89 @@ StEntry StLabel.hint-text {
 }
 
 .dash-item-container .show-apps:hover .overview-icon {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(40, 40, 40, 0.1);
 }
 
 .dash-item-container .show-apps:active .overview-icon {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .dash-item-container .show-apps:selected .overview-icon,
 .dash-item-container .show-apps:focus .overview-icon {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .dash-item-container .show-apps:selected .overview-icon:hover .overview-icon,
 .dash-item-container .show-apps:focus .overview-icon:hover .overview-icon {
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: rgba(40, 40, 40, 0.16);
 }
 
 .dash-item-container .show-apps:selected .overview-icon:active .overview-icon,
 .dash-item-container .show-apps:focus .overview-icon:active .overview-icon {
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(40, 40, 40, 0.13);
 }
 
 .dash-item-container .show-apps:outlined .overview-icon,
 .dash-item-container .show-apps:checked .overview-icon {
-    background-color: rgba(255, 255, 255, 0.19);
+    background-color: rgba(40, 40, 40, 0.19);
 }
 
 .dash-item-container .show-apps:outlined .overview-icon:active .overview-icon,
 .dash-item-container .show-apps:checked .overview-icon:active .overview-icon {
-    background-color: rgba(255, 255, 255, 0.22);
+    background-color: rgba(40, 40, 40, 0.22);
 }
 
 .dash-item-container .show-apps:outlined .overview-icon:hover .overview-icon,
 .dash-item-container .show-apps:checked .overview-icon:hover .overview-icon {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(40, 40, 40, 0.25);
 }
 
 .dash-item-container .show-apps:drop .overview-icon {
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(40, 40, 40, 0.2);
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.dash-item-container .app-well-app:hover .overview-icon {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.dash-item-container .app-well-app:active .overview-icon {
+    background-color: rgba(40, 40, 40, 0.05);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon:hover .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon:hover .overview-icon {
+    background-color: rgba(40, 40, 40, 0.15);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon:active .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon:active .overview-icon {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon {
+    background-color: rgba(40, 40, 40, 0.19);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon:hover .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon:hover .overview-icon {
+    background-color: rgba(40, 40, 40, 0.25);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon:active .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon:active .overview-icon {
+    background-color: rgba(40, 40, 40, 0.22);
+}
+
+.dash-item-container .app-well-app:drop .overview-icon {
+    border: 2px solid rgba(40, 40, 40, 0.2);
+    background-color: rgba(40, 40, 40, 0.1);
 }
 
 .dash-item-container .show-apps,
@@ -2640,7 +2682,7 @@ StEntry StLabel.hint-text {
 .dash-separator {
     width: 1px;
     margin: 0 4px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
     margin-bottom: 12px;
 }
 
@@ -2895,7 +2937,7 @@ StEntry StLabel.hint-text {
     width: 5px;
     border-radius: 5px;
     margin-bottom: 8px;
-    background-color: white;
+    background-color: #252525;
 }
 
 StWidget.focused .app-well-app-running-dot {
@@ -3616,7 +3658,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .workspace-thumbnail-indicator {
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     padding: 0px;
 }
@@ -3658,13 +3700,9 @@ StWidget.focused .app-well-app-running-dot {
     border-radius: 12px;
 }
 
-.tile-preview-left.on-primary {
+.tile-preview-left.on-primary {}
 
-}
-
-.tile-preview-right.on-primary {
-
-}
+.tile-preview-right.on-primary {}
 
 .tile-preview-left.tile-preview-right.on-primary {
     border-radius: 0px;

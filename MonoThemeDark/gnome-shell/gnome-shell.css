@@ -114,13 +114,12 @@ stage {
     text-align: center;
     font-weight: bold;
     color: white;
-    background-color: transparent;
-    border: 1px solid transparent;
+    background-color: #252525;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     spacing: 12px;
-    padding: 12px 18px;
-    margin-bottom: 4em;
-    margin-bottom: 62px;
+    padding: 0px 18px;
+    margin-bottom: 9em;
 }
 
 .osd-window>* {
@@ -128,7 +127,7 @@ stage {
 }
 
 .osd-window StIcon {
-    icon-size: 1.5em;
+    icon-size: 1.2em;
 }
 
 .osd-window StLabel:ltr {
@@ -209,7 +208,7 @@ stage {
 
 
 #panel {
-    background-color: rgba(37, 37, 37, 0.2);
+    background-color: rgba(37, 37, 37, 0.4);
     font-weight: bold;
     height: 2.2em;
     transition-duration: 250ms;
@@ -1548,7 +1547,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-type-button:checked {
     transition: 200ms;
     color: white;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .screenshot-ui-show-pointer-button:outlined:hover,
@@ -1556,7 +1555,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-show-pointer-button:checked:hover,
 .screenshot-ui-type-button:checked:hover {
     transition: 200ms;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .screenshot-ui-show-pointer-button:outlined:active,
@@ -1564,7 +1563,7 @@ StScrollBar StButton#hhandle:active {
 .screenshot-ui-show-pointer-button:checked:active,
 .screenshot-ui-type-button:checked:active {
     transition: 200ms;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .screenshot-ui-show-pointer-button:focus,
@@ -1755,7 +1754,7 @@ StScrollBar StButton#hhandle:active {
 
 .screenshot-ui-area-selector-handle {
     border-radius: 99px;
-    background-color: #aaaaaa;
+    background-color: white;
     box-shadow: none;
     width: 18px;
     height: 18px;
@@ -1788,11 +1787,11 @@ StScrollBar StButton#hhandle:active {
 }
 
 .screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -2629,6 +2628,49 @@ StEntry StLabel.hint-text {
 }
 
 .dash-item-container .show-apps:drop .overview-icon {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dash-item-container .app-well-app:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dash-item-container .app-well-app:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon:hover .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dash-item-container .app-well-app:selected .overview-icon:active .overview-icon,
+.dash-item-container .app-well-app:focus .overview-icon:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon {
+    background-color: rgba(255, 255, 255, 0.19);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon:hover .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.dash-item-container .app-well-app:outlined .overview-icon:active .overview-icon,
+.dash-item-container .app-well-app:checked .overview-icon:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.dash-item-container .app-well-app:drop .overview-icon {
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -3613,7 +3655,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .workspace-thumbnail-indicator {
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     padding: 0px;
 }
@@ -3655,13 +3697,9 @@ StWidget.focused .app-well-app-running-dot {
     border-radius: 12px;
 }
 
-.tile-preview-left.on-primary {
+.tile-preview-left.on-primary {}
 
-}
-
-.tile-preview-right.on-primary {
-
-}
+.tile-preview-right.on-primary {}
 
 .tile-preview-left.tile-preview-right.on-primary {
     border-radius: 0px;
