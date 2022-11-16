@@ -4761,8 +4761,17 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0);
     padding: 8px;
+}
+
+.quick-menu-toggle .quick-toggle-arrow {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px;
+}
+
+.quick-menu-toggle:hover .quick-toggle-arrow {
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .quick-menu-toggle .quick-toggle-arrow:ltr {
@@ -4813,9 +4822,9 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-toggle-menu {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e8e8e8;
     color: #252525;
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 16.5px;
     margin: 0 16.5px;
 }
