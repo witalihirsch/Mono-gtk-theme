@@ -1,5 +1,6 @@
 # Mono Theme for Gnome
-Simple theme with nothing extra to use on a regular basis. Theme tested on Manjaro Linux and Fedora.
+Simple theme with nothing extra to use on a regular basis. Theme tested on Manjaro and Fedora.  
+The theme is still developing and it would be nice if you reported all the bugs in [issues.](https://github.com/witalihirsch/Mono-gtk-theme/issues)
 
 <p align="center"><b>Gtk4 apps</b></p>
 <p align="center">
