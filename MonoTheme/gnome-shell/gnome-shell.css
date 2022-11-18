@@ -2412,7 +2412,10 @@ StEntry StLabel.hint-text {
 }
 
 
-/*i found it in clear button in calendar/notifications*/
+
+/*BUTTON*/
+
+
 #LookingGlassDialog>#Toolbar .lg-toolbar-button,
 .app-folder-dialog .folder-name-container .edit-folder-button,
 .button {
@@ -4878,6 +4881,10 @@ StWidget.focused .app-well-app-running-dot {
 /*ICON BUTTON IN QUICK SETTINGS*/
 
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button,
+.flat.button,
+.flat.icon-button,
 .icon-button {
     border-radius: 99px;
     border-style: solid;
@@ -4889,32 +4896,56 @@ StWidget.focused .app-well-app-running-dot {
     background-color: rgba(40, 40, 40, 0.05);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:hover,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:hover,
+.flat.button:hover,
+.flat.icon-button:hover,
 .icon-button:hover {
     transition-duration: 100ms;
     color: #252525;
     background-color: rgba(40, 40, 40, 0.1);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:active,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:active,
+.flat.button:active,
+.flat.icon-button:active,
 .icon-button:active {
     transition-duration: 100ms;
     color: #252525;
     background-color: rgba(40, 40, 40, 0.05);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:checked,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:checked,
+.flat.button:checked,
+.flat.icon-button:checked,
 .icon-button:checked {
     transition-duration: 100ms;
     color: #252525;
     background-color: rgba(40, 40, 40, 0.1);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:checked:hover,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:checked:hover,
+.flat.button:checked:hover,
+.flat.icon-button:checked:hover,
 .icon-button:checked:hover {
     background-color: rgba(40, 40, 40, 0.15);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:checked:active,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:checked:active,
+.flat.button:checked:active,
+.flat.icon-button:checked:active,
 .icon-button:checked:active {
     background-color: rgba(40, 40, 40, 0.1);
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:focus,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:focus,
+.flat.button:focus,
+.flat.icon-button:focus,
 .icon-button:focus {
     transition-duration: 100ms;
     color: #252525;
@@ -4922,16 +4953,28 @@ StWidget.focused .app-well-app-running-dot {
     box-shadow: none;
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:focus:hover,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:focus:hover,
+.flat.button:focus:hover,
+.flat.icon-button:focus:hover,
 .icon-button:focus:hover {
     background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:focus:active,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:focus:active,
+.flat.button:focus:active,
+.flat.icon-button:focus:active,
 .icon-button:focus:active {
     background-color: rgba(40, 40, 40, 0.05);
     box-shadow: none;
 }
 
+#LookingGlassDialog>#Toolbar .flat.lg-toolbar-button:insensitive,
+.app-folder-dialog .folder-name-container .flat.edit-folder-button:insensitive,
+.flat.button:insensitive,
+.flat.icon-button:insensitive,
 .icon-button:insensitive {
     transition-duration: 100ms;
     color: rgba(40, 40, 40, 0.5);
