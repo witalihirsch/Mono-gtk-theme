@@ -4768,11 +4768,6 @@ StWidget.focused .app-well-app-running-dot {
     padding: 8px;
 }
 
-.quick-menu-toggle .quick-toggle-arrow {
-    background-color: rgba(255, 255, 255, 0);
-    padding: 8px;
-}
-
 .quick-menu-toggle:hover .quick-toggle-arrow {
     background-color: rgba(40, 40, 40, 0.05);
 }
