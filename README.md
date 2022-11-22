@@ -77,7 +77,7 @@ sudo cp gnome-shell-theme.gresource ~/Documents
 
 
 ### Using
-To change the light or dark theme of `Gtk3` apps and `Gnome-shell` use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).
+To change the light or dark theme of `Gtk3` apps and `Gnome-shell` use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).  
 The dark and light appearance of Gtk4 is changed by renaming the desired file to `gtk.css` in `.config/gtk4.0` or you can try the script I made for automatic theme switcher in `gtk4` and `gtk3/4 flatpak` apps. Go to Night Theme Switcher and select `Commands` tab and paste this script.  
 Sunrise:  
 ```pwsh
