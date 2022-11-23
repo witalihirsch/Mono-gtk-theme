@@ -1900,7 +1900,7 @@ menubar>item popover.menu popover.menu>contents {
 
 window.dialog.message.csd.background,
 window.dialog.message.csd .titlebar {
-    border-radius: 0px;
+    border-radius: 12px;
     min-height: 28px;
     background-color: #252525;
 }
@@ -1988,6 +1988,50 @@ window.dialog.message .dialog-action-area>button.suggested-action,
 window.dialog.message .dialog-action-area>button.destructive-action {
     border-radius: 6px;
     color: white;
+}
+
+window.dialog.message .dialog-action-area>button.suggested-action:hover {
+    background-color: #2094c9;
+}
+
+window.dialog.message .dialog-action-area>button.suggested-action:active {
+    background-color: #196b93;
+}
+
+window.dialog.message .dialog-action-area>button.suggested-action:checked {
+    background-color: #2094c9;
+}
+
+window.dialog.message .dialog-action-area>button.suggested-action:backdrop {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #196b93;
+}
+
+window.dialog.message .dialog-action-area>button.suggested-action:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+window.dialog.message .dialog-action-area>button.destructive-action:hover {
+    background-color: #d65451;
+}
+
+window.dialog.message .dialog-action-area>button.destructive-action:active {
+    background-color: #a8403e;
+}
+
+window.dialog.message .dialog-action-area>button.destructive-action:checked {
+    background-color: #d65451;
+}
+
+window.dialog.message .dialog-action-area>button.destructive-action:backdrop {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #a8403e;
+}
+
+window.dialog.message .dialog-action-area>button.destructive-action:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 window.aboutdialog image.large-icons {
