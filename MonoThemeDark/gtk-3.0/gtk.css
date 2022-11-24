@@ -7667,11 +7667,11 @@ button:visited>label {
 
 
 button.osd {
-    min-width: 32px;
+    min-width: 20px;
     min-height: 32px;
     color: white;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 99px;
+    background-color: rgba(60, 60, 60, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
@@ -7685,7 +7685,7 @@ button.osd.image-button {
 button.osd:hover {
     color: white;
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(80, 80, 80, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
@@ -7695,7 +7695,7 @@ button.osd:hover {
 button.osd:active {
     color: white;
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(60, 60, 60, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
@@ -7705,7 +7705,7 @@ button.osd:active {
 button.osd:checked {
     color: white;
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(80, 80, 80, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
@@ -7717,7 +7717,7 @@ button.osd:disabled {
     color: rgba(255, 255, 255, 0.5);
     border-color: transparent;
     background-color: transparent;
-    background-image: image(rgba(255, 255, 255, 0.05));
+    background-color: rgba(60, 60, 60, 0.5);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -7729,7 +7729,7 @@ button.osd:backdrop {
     color: rgba(255, 255, 255, 0.5);
     border-color: transparent;
     background-color: transparent;
-    background-image: image(rgba(255, 255, 255, 0.05));
+    background-color: rgba(60, 60, 60, 0.5);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;

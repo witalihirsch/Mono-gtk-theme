@@ -5963,8 +5963,7 @@ button.image-button {
 }
 
 notebook>header>tabs>arrow.text-button,
-colorswatch#add-color-button>overlay.text-button,
-button.text-button {
+colorswatch#add-color-button>overlay.text-button {
     padding-left: 17px;
     padding-right: 17px;
 }
@@ -6092,7 +6091,7 @@ button.osd {
     animation-timing-function: ease-in-out;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: white;
-    background-color: rgba(120, 120, 120, 0.2);
+    background-color: rgba(60, 60, 60, 0.7);
     margin: 5px;
     padding: 0;
 }
@@ -6113,7 +6112,7 @@ button.osd:focus:focus-visible {
 menubutton.osd>button:hover,
 button.osd:hover {
     box-shadow: none;
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(80, 80, 80, 0.7);
 }
 
 menubutton.osd>button.keyboard-activating,
@@ -6121,24 +6120,24 @@ menubutton.osd>button:active,
 button.osd.keyboard-activating,
 button.osd:active {
     color: white;
-    background-color: rgba(120, 120, 120, 0.2);
+    background-color: rgba(60, 60, 60, 0.7);
 }
 
 menubutton.osd>button:checked,
 button.osd:checked {
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(80, 80, 80, 0.7);
 }
 
 menubutton.osd>button:checked:hover,
 button.osd:checked:hover {
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(100, 100, 100, 0.7);
 }
 
 menubutton.osd>button:checked.keyboard-activating,
 menubutton.osd>button:checked:active,
 button.osd:checked.keyboard-activating,
 button.osd:checked:active {
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(80, 80, 80, 0.7);
 }
 
 menubutton.osd>button:backdrop,
@@ -6146,7 +6145,7 @@ menubutton.osd>button:disabled,
 button.osd:backdrop,
 button.osd:disabled {
     color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(120, 120, 120, 0.1);
+    background-color: rgba(60, 60, 60, 0.5);
 }
 
 

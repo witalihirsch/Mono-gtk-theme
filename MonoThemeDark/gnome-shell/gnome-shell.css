@@ -127,7 +127,8 @@ stage {
 }
 
 .osd-window StIcon {
-    icon-size: 1.2em;
+    icon-size: 1.3em;
+    padding: 15px 0px;
 }
 
 .osd-window StLabel:ltr {
@@ -142,13 +143,12 @@ stage {
 
 .osd-window .level {
     margin-bottom: 4px;
-    height: 6px;
-    min-width: 10.9em;
-    -barlevel-height: 6px;
+    height: 8px;
+    min-width: 10em;
+    -barlevel-height: 8px;
     -barlevel-background-color: rgba(255, 255, 255, 0.1);
     -barlevel-active-background-color: white;
     -barlevel-overdrive-color: white;
-    -barlevel-overdrive-separator-width: 3px;
     -barlevel-overdrive-separator-width: 0px;
 }
 
@@ -574,7 +574,7 @@ stage {
 
 
 
-/*SWITCH (WORK IN PROGRESS)*/
+/*SWITCH*/
 
 
 .toggle-switch {
@@ -1265,7 +1265,6 @@ stage {
 
 .message .message-title {
     font-weight: bold;
-    /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
     padding-top: 0.57em;
 }
 
@@ -1276,7 +1275,6 @@ stage {
 .message .message-secondary-bin>.event-time {
     color: rgba(255, 255, 255, 0.5);
     font-size: 9pt;
-    /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
     padding-bottom: 0.13em;
 }
 
@@ -2103,7 +2101,6 @@ StScrollBar StButton#hhandle:active {
     max-width: 28em;
 }
 
-/*footer buttons in wifi menu*/
 .modal-dialog .modal-dialog-linked-button,
 .hotplug-notification-item,
 .notification-banner .notification-button {
@@ -2328,7 +2325,7 @@ StEntry StLabel.hint-text {
 
 
 
-/*WINDOW PICKER (window button)*/
+/*WINDOW PICKER*/
 
 
 .window-picker {
@@ -2377,7 +2374,6 @@ StEntry StLabel.hint-text {
 /*COMMON STYLING*/
 
 
-/*хз что это*/
 .workspace-thumbnails .workspace-thumbnail {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -3691,7 +3687,7 @@ StWidget.focused .app-well-app-running-dot {
 
 
 
-/*TILED WINDOW PREVIEW (DESKTOP)*/
+/*TILED WINDOW PREVIEW*/
 
 
 .tile-preview {
