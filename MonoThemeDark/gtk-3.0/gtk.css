@@ -1,3 +1,7 @@
+* {
+    outline-color: rgba(255, 255, 255, 0.1);
+}
+
 /*BACKGROUND*/
 
 .background {
@@ -10934,3 +10938,6 @@ sq_button.small {
 @define-color window_bg_color #252525;
 @define-color theme_bg_color #252525;
 
+/*evolution*/
+@define-color theme_fg_color white;
+@define-color theme_base_color #252525;
