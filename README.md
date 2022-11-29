@@ -53,7 +53,7 @@ or
 sudo flatpak override --env=GTK_THEME=MonoThemeDark
 ```
 
-### GDM
+### GDM (optional)
 IMPORTANT❗️ Take a snapshot of the system before use!  
 If you want the gnome-shell theme to extend to the lock and login screen, move the `gnome-shell-theme.gresource` file from `gnome-shell` folder to `/usr/share/gnome-shell/` with a replacement and restart system with `ALT+F2` and enter `r` for Xorg or reboot/log out for Wayland session.  
 Command:
@@ -66,7 +66,7 @@ Example:
 sudo cp gnome-shell-theme.gresource ~/Documents
 ``` 
 
-## Firefox
+### Firefox
 [Install Firefox Theme](https://github.com/witalihirsch/Mono-firefox-theme)
 
 <p align="center"><b>Firefox</b></p>
@@ -74,9 +74,7 @@ sudo cp gnome-shell-theme.gresource ~/Documents
   <img alt="apps" src="images/firefox.png">
 </p>
 
-
-
-### Using
+## Using
 To change the light or dark theme of `Gtk3` apps and `Gnome-shell` use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).  
 The dark and light appearance of Gtk4 is changed by renaming the desired file to `gtk.css` in `.config/gtk4.0` or you can try the script I made for automatic theme switcher in `gtk4` and `gtk3/4 flatpak` apps. Go to Night Theme Switcher and select `Commands` tab and paste this script.  
 Sunrise:  
@@ -88,3 +86,6 @@ Sunset:
 flatpak override --env=GTK_THEME=MonoThemeDark --user & cd ~/.config/gtk-4.0 ; mv gtk.css gtk2.css ; mv gtk-dark.css gtk.css ; mv gtk2.css gtk-dark.css
 ```
 Thanks to this script, you can change the theme of apps by switching dark and light theme in the settings, but gtk4 and gtk4 flatpak apps will be updated only when the app window is reopened. If `ALL` the steps are completed correctly, then the theme color will change for `ALL` applications in the system, write your questions in [issues.](https://github.com/witalihirsch/Mono-gtk-theme/issues)
+
+## Uninstalling
+To remove a theme, follow all the steps above in reverse order
