@@ -8304,3 +8304,149 @@ leaflet>shadow.down {
     background: none;
     box-shadow: none;
 }
+
+
+
+/*NEW ABOUT DIALOG*/
+
+
+window.about .main-page>viewport>clamp>box {
+    margin: 12px;
+    border-spacing: 6px;
+}
+
+window.about .main-page>viewport>clamp>box>box {
+    margin-top: 18px;
+    border-spacing: 18px;
+    margin-bottom: 6px;
+}
+
+window.about .main-page .app-version {
+    padding: 3px 18px;
+    color: white;
+    border-radius: 999px;
+    margin-top: 3px;
+}
+
+window.about .subpage>viewport>clamp>box {
+    margin: 18px 12px;
+    border-spacing: 18px;
+}
+
+window.about .subpage>clamp>textview {
+    background: none;
+    color: inherit;
+}
+
+
+
+/*NEW MESSAGE DIALOG*/
+
+
+window.messagedialog {
+    background-color: #252525;
+    color: white;
+}
+
+window.messagedialog separator {
+    background-color: transparent;
+}
+
+window.messagedialog.csd {
+    outline: none;
+}
+
+window.messagedialog .message-area {
+    padding: 24px 30px;
+    padding-bottom: 10px;
+    border-spacing: 10px;
+}
+
+window.messagedialog .response-area>box>button {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    margin: 5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+window.messagedialog .response-area>box>button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+window.messagedialog .response-area>box>button:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+window.messagedialog .response-area>box>button:checked {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+window.messagedialog .response-area>box>button:backdrop,
+window.messagedialog .response-area>box>button:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+window.messagedialog .response-area>box>button.suggested {
+    background-color: #1b82b3;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.suggested:hover {
+    background-color: #2094c9;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.suggested:active {
+    background-color: #196b93;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.suggested:checked {
+    background-color: #2094c9;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.suggested:backdrop {
+    background-color: #196b93;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+window.messagedialog .response-area>box>button.suggested:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+window.messagedialog .response-area>box>button.destructive {
+    background-color: #c34c4a;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.destructive:hover {
+    background-color: #d65451;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.destructive:active {
+    background-color: #a8403e;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.destructive:checked {
+    background-color: #d65451;
+    color: white;
+}
+
+window.messagedialog .response-area>box>button.destructive:backdrop {
+    background-color: #a8403e;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+window.messagedialog .response-area>box>button.destructive:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+}
