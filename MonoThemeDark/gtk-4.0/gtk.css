@@ -1853,7 +1853,7 @@ menubar {
 
 menubar:backdrop,
 menubar:backdrop {
-    color: rgba(253, 253, 253, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 menubar>item {
@@ -1869,19 +1869,19 @@ menubar>item {
 
 menubar>item:hover {
     transition: none;
-    background-color: rgba(253, 253, 253, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     background-image: none;
     box-shadow: none;
     transition: 200ms;
 }
 
 menubar>item:selected {
-    background-color: rgba(253, 253, 253, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 menubar>item:backdrop,
 menubar>item:disabled {
-    color: rgba(253, 253, 253, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 menubar>item popover.menu popover.menu {
@@ -2825,32 +2825,18 @@ combobox>.linked:not(.vertical)>button:not(:only-child):disabled {
 
 
 expander {
-    min-width: 24px;
-    min-height: 24px;
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-right.svg"));
+    min-width: 5px;
+    min-height: 5px;
     color: rgba(255, 255, 255, 0.5);
     margin: 3px;
 }
 
 expander:hover {
     color: white;
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-right-hover.svg"));
-}
-
-expander:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-right.svg"));
 }
 
 expander:disabled {
     color: rgba(255, 255, 255, 0.5);
-}
-
-expander:checked {
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-down.svg"));
-}
-
-expander:checked:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-down-hover.svg"));
 }
 
 expander-widget {
@@ -3073,6 +3059,7 @@ popover>contents {
     background-clip: padding-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: none;
+    margin-top: 3px;
 }
 
 popover>arrow {
@@ -7368,15 +7355,12 @@ menubutton.image-button>button {
 
 menubutton>button arrow {
     background-color: rgba(255, 255, 255, 0);
-    min-height: 20px;
-    min-width: 20px;
     border-radius: 5px;
-    min-height: 20px;
-    min-width: 18px;
+    min-height: 5px;
+    min-width: 5px;
     box-shadow: none;
     margin-top: 1px;
     margin-bottom: 1px;
-    -gtk-icon-source: -gtk-scaled(url("assets/expander/arrow-down-hover.svg"));
 }
 
 menubutton:selected arrow {
@@ -8450,3 +8434,7 @@ window.messagedialog .response-area>box>button.destructive:disabled {
     background-color: rgba(255, 255, 255, 0.05);
     color: rgba(255, 255, 255, 0.5);
 }
+
+
+
+@define-color theme_bg_color black;
