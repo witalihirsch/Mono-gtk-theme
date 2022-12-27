@@ -74,6 +74,15 @@ sudo cp gnome-shell-theme.gresource ~/Documents
   <img alt="apps" src="images/firefox.png">
 </p>
 
+### Icons
+This is a mix of Adwaita symbolic icons and new icons that we made together with my friend. Icons match and don't get out from the style of Adwaita icons.  
+[Install Icon Theme](https://github.com/witalihirsch/Mono-icon-theme)
+
+<p align="center"><b>Icons</b></p>
+<p align="center">
+  <img alt="apps" src="images/icons.png">
+</p>
+
 ## Using
 To change the light or dark theme of `Gtk3` apps and `Gnome-shell` use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) or [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).  
 The dark and light appearance of Gtk4 is changed by renaming the desired file to `gtk.css` in `.config/gtk4.0` or you can try the script I made for automatic theme switcher in `gtk4` and `gtk3/4 flatpak` apps. Go to Night Theme Switcher and select `Commands` tab and paste this script.  
