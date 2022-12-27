@@ -1988,7 +1988,7 @@ window.dialog.message.csd {
 
 window.dialog.message.csd .dialog-action-area {
     border-top: 0px solid transparent;
-    margin: 0;
+    margin: 3px;
     border-spacing: 0;
     padding: 0px;
 }
@@ -1999,7 +1999,7 @@ window.dialog.message.csd .dialog-action-area>button {
     padding: 6px 12px;
     box-shadow: none;
     border-radius: 6px;
-    margin: 5px;
+    margin: 3px;
     border: none;
     color: white;
 }
@@ -8397,10 +8397,14 @@ window.messagedialog .message-area {
     border-spacing: 10px;
 }
 
+window.messagedialog .response-area>box {
+    margin: 3px;
+}
+
 window.messagedialog .response-area>box>button {
     background-color: rgba(255, 255, 255, 0.05);
     color: white;
-    margin: 5px;
+    margin: 3px;
     padding: 6px 10px;
     border-radius: 6px;
 }
@@ -8488,6 +8492,56 @@ window.messagedialog .response-area>box>button.destructive:disabled {
 
 
 
-@define-color theme_bg_color black;
+/* COLORS */
+@define-color theme_bg_color #333333;
+@define-color theme_fg_color white;
+@define-color theme_base_color #252525;
+@define-color theme_text_color white;
+@define-color theme_selected_bg_color #1b82b3;
+@define-color theme_selected_fg_color white;
+@define-color insensitive_bg_color #252525;
+@define-color insensitive_fg_color rgba(255, 255, 255, 0.5);
+@define-color insensitive_base_color white;
+@define-color borders rgba(255, 255, 255, 0.2);
+@define-color theme_unfocused_bg_color #252525;
+@define-color theme_unfocused_fg_color rgba(255, 255, 255, 0.5);
+@define-color theme_unfocused_base_color #282828;
+@define-color theme_unfocused_text_color white;
+@define-color theme_unfocused_selected_bg_color #1b82b3;
+@define-color theme_unfocused_selected_fg_color white;
+@define-color unfocused_insensitive_color #282828;
+@define-color unfocused_borders rgba(255, 255, 255, 0.1);
+
+@define-color accent_color #1b82b3;
+@define-color accent_bg_color accent_color;
+@define-color accent_fg_color white;
+@define-color destructive_color #c34c4a;
+@define-color destructive_bg_color destructive_color;
+@define-color destructive_fg_color white;
+@define-color success_color #79B757;
+@define-color success_bg_color success_color;
+@define-color success_fg_color white;
+@define-color warning_color #ffb83d;
+@define-color warning_bg_color warning_color;
+@define-color warning_fg_color #252525;
+@define-color error_color #ed5f5d;
+@define-color error_bg_color error_color;
+@define-color error_fg_color white;
 @define-color window_bg_color #252525;
 @define-color window_fg_color #909090;
+@define-color view_bg_color #252525;
+@define-color view_fg_color white;
+@define-color headerbar_bg_color #252525;
+@define-color headerbar_fg_color white;
+@define-color headerbar_border_color rgba(255, 255, 255, 0.1);
+@define-color headerbar_backdrop_color #282828;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+@define-color card_bg_color rgba(255, 255, 255, 0.05);
+@define-color card_fg_color white;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+@define-color dialog_bg_color #252525;
+@define-color dialog_fg_color white;
+@define-color popover_bg_color #333333;
+@define-color popover_fg_color white;
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
