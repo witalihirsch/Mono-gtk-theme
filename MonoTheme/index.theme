@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MonoTheme
+Comment=index.theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=MonoTheme
+ButtonLayout=close,minimize,maximize:menu

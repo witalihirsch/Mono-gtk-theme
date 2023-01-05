@@ -7,11 +7,13 @@
 .background {
     color: white;
     background-color: #252525;
+    transition: 0ms;
 }
 
 .background:backdrop {
     color: rgba(255, 255, 255, 0.5);
     background-color: #282828;
+    transition: 0ms;
 }
 
 .background.csd {
@@ -128,6 +130,7 @@ window.csd>.titlebar:not(headerbar) {
     border-style: none;
     border-color: transparent;
     box-shadow: none;
+    transition: 0ms;
 }
 
 .titlebar:not(headerbar) separator {
@@ -167,7 +170,7 @@ decoration {
 
 decoration:backdrop {
     box-shadow: 0 3px 12px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 0 0 1px #404040;
-    transition: 200ms ease-out;
+    transition: 0ms;
 }
 
 .maximized decoration,
@@ -1980,7 +1983,7 @@ menubar>menuitem,
 .menubar>menuitem {
     min-height: 16px;
     color: white;
-    transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
     padding: 8px 10px;
     border: none;
     border-radius: 6px;
@@ -2914,7 +2917,7 @@ button.flat {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    transition: none;
+    transition: 200ms;
 }
 
 button.sidebar-button:hover,
@@ -3827,13 +3830,14 @@ headerbar {
     background: #252525;
     padding-left: 10px;
     padding-right: 15px;
+    transition: 0ms;
 }
 
 .titlebar:backdrop:not(headerbar),
 headerbar:backdrop {
     background: #282828;
     background-image: none;
-    transition: 200ms ease-out;
+    transition: 0ms;
 }
 
 .titlebar:not(headerbar) .title,
@@ -4141,7 +4145,7 @@ headerbar.default-decoration button.titlebutton {
     min-width: 24px;
     margin: 0 4px 0 4px;
     padding: 0;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0ms;
 }
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton:hover,
@@ -4511,7 +4515,7 @@ headerbar .linked entry:not(:first-child):backdrop,
 
 headerbar:not(:backdrop),
 .titlebar:not(:backdrop) {
-    transition: 50ms ease-in;
+    transition: 0ms;
     transition-property: background-color, background-image, box-shadow, border-color, color, text-shadow;
 }
 
@@ -5478,7 +5482,7 @@ keypad .symbol {
 
 paper,
 .card {
-    transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 200ms cubic-bezier(0.25, 0.8, 0.25, 1);
     min-width: 16px;
     min-height: 20px;
     padding: 7px 10px;
@@ -5528,7 +5532,7 @@ button.emoji-section {
     border: none;
     outline-offset: 0px;
     box-shadow: none;
-    transition: none;
+    transition: 200ms;
     animation: none;
     color: white;
 }
@@ -6143,12 +6147,12 @@ treeview.view header button {
 treeview.view header button:hover {
     color: rgba(255, 255, 255, 0.5);
     box-shadow: none;
-    transition: none;
+    transition: 200ms;
 }
 
 treeview.view header button:active {
     color: rgba(255, 255, 255, 0.3);
-    transition: none;
+    transition: 200ms;
 }
 
 treeview.view button.dnd:active,
@@ -6167,7 +6171,7 @@ treeview.view header.button.dnd {
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
-    transition: none;
+    transition: 200ms;
 }
 
 treeview.view acceleditor>label {
@@ -8513,7 +8517,7 @@ tabbar scrolledwindow.pinned tabbox:dir(rtl):backdrop {
 }
 
 tabbar undershoot {
-    transition: background 150ms ease-in-out;
+    transition: background 200ms ease-in-out;
 }
 
 tabbar undershoot.left {
@@ -8536,7 +8540,7 @@ tabbar tab {
     border-style: solid;
     border-color: transparent;
     border-width: 0px;
-    transition: background 150ms ease-in-out;
+    transition: background 200ms ease-in-out;
     background-color: rgba(255, 255, 255, 0.05);
     background-clip: padding-box;
 }
@@ -8576,7 +8580,7 @@ tabbar .end-action {
     background-clip: padding-box;
     border-color: transparent;
     border-style: solid;
-    transition: background 150ms ease-in-out;
+    transition: background 200ms ease-in-out;
 }
 
 tabbar .start-action:backdrop,
