@@ -7707,7 +7707,7 @@ button.osd:hover {
 button.osd:active {
     color: #252525;
     border-color: transparent;
-    background-color: rgba(200, 200, 200, 0.7)
+    background-color: rgba(200, 200, 200, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
