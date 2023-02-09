@@ -2,6 +2,13 @@
 Simple theme with nothing extra to use on a regular basis. Theme tested on Manjaro and Fedora.  
 The theme is still developing and it would be nice if you reported all the bugs in [issues.](https://github.com/witalihirsch/Mono-gtk-theme/issues)  
 
+## Support
+<div>
+    <a href="https://www.patreon.com/witalihirsch">
+        <img src="images/patreon.png" height="60px" >
+    </a>
+</div>
+
 ## Mono Project Preview
 [Mono Project Preview.](https://witalihirsch.github.io/mono.html) Work in progress.
 
@@ -12,26 +19,23 @@ The theme is still developing and it would be nice if you reported all the bugs 
 
 <p align="center"><b>Gtk3 apps</b></p>
 <p align="center">
-  <img alt="apps" src="images/gtk3.png">
+    <img alt="apps" src="images/gtk3.png">
 </p>
 
 <p align="center"><b>Flatpak apps</b></p>
 <p align="center">
-  <img alt="flatpak" src="images/flatpak.png">
+    <img alt="flatpak" src="images/flatpak.png">
 </p>
 
 <p align="center"><b>Gnome 43 apps</b></p>
 <p align="center">
-  <img alt="apps" src="images/gnome43.png">
+    <img alt="apps" src="images/gnome43.png">
 </p>
 
 <p align="center"><b>Gnome-shell</b></p>
 <p align="center">
-  <img alt="apps" src="images/gnome-shell.png">
+    <img alt="apps" src="images/gnome-shell.png">
 </p>
-
-## Support
-[My Patreon](https://www.patreon.com/witalihirsch)
 
 ## Download
 Download theme [here.](https://github.com/witalihirsch/Mono-gtk-theme/releases)
