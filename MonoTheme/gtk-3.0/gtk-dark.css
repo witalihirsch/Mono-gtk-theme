@@ -4730,84 +4730,6 @@ viewswitchertitle viewswitcher {
 
 
 
-/*MINIMUZE, MAXIMIZE, CLOSE BUTTONS*/
-
-
-button.titlebutton {
-    padding: 2px;
-    margin: 0;
-    box-shadow: none;
-    border: none;
-    background: none;
-    text-shadow: none;
-}
-
-headerbar button.titlebutton.close,
-headerbar button.titlebutton.maximize,
-headerbar button.titlebutton.minimize {
-    margin: 0px;
-    margin-right: -2px;
-    min-width: 20px;
-    min-height: 20px;
-    padding: 2px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-color: transparent;
-    border-radius: 9999px;
-    transition: 200ms;
-    color: #252525;
-    background-image: none;
-}
-
-headerbar button.titlebutton.close:hover {
-    background-image: none;
-    background-color: #C34C4A;
-    color: white;
-}
-
-headerbar button.titlebutton.close:active {
-    background-image: none;
-    background-color: #A8403E;
-    color: white;
-}
-
-headerbar button.titlebutton.maximize:hover,
-headerbar button.titlebutton.minimize:hover {
-    background-image: none;
-    background-color: rgba(40, 40, 40, 0.1);
-}
-
-headerbar button.titlebutton.maximize:active,
-headerbar button.titlebutton.minimize:active {
-    background-image: none;
-    background-color: rgba(40, 40, 40, 0.06);
-}
-
-headerbar button.titlebutton.close:backdrop,
-headerbar button.titlebutton.maximize:backdrop,
-headerbar button.titlebutton.minimize:backdrop {
-    opacity: 1;
-    color: rgba(40, 40, 40, 0.5);
-    background-image: none;
-}
-
-headerbar button.titlebutton.maximize:backdrop:hover,
-headerbar button.titlebutton.minimize:backdrop:hover,
-headerbar button.titlebutton.close:backdrop:hover {
-    color: rgba(40, 40, 40, 0.5);
-    background-color: rgba(40, 40, 40, 0.05);
-}
-
-.selection-mode headerbar button.titlebutton:backdrop,
-.selection-mode .titlebar button.titlebutton:backdrop,
-headerbar.selection-mode button.titlebutton:backdrop,
-.titlebar.selection-mode button.titlebutton:backdrop {
-    -gtk-icon-shadow: none;
-}
-
-
-
 /*BUTTONS IN HEADERBAR*/
 
 
@@ -9729,49 +9651,82 @@ window.rounded actionbar decoration {
 
 
 .ssd .titlebar {
-    border-width: 0;
-    padding: 0px 4px;
+    padding: 4px 15px 4px 15px;
     min-height: 36px;
-    border-bottom: 1px solid rgba(40, 40, 40, 0.1);
 }
 
-.ssd .titlebar:backdrop {
-    border-color: rgba(40, 40, 40, 0.1);
+
+
+/*MINIMUZE, MAXIMIZE, CLOSE BUTTONS*/
+
+
+button.titlebutton:not(.suggested-action):not(.destructive-action) {
+    padding: 2px;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+    text-shadow: none;
+    margin-right: -2px;
+    min-width: 20px;
+    min-height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-color: transparent;
+    border-radius: 9999px;
+    transition: 200ms;
+    color: #252525;
+    background-image: none;
 }
 
-.ssd .titlebar.default-decoration button.titlebutton {
-    background-color: rgba(40, 40, 40, 0.05);
-    min-height: 24px;
-    min-width: 24px;
-    margin: 0 4px 0 4px;
-    padding: 0;
+
+button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
+    background-image: none;
+    background-color: #C34C4A;
+    color: white;
 }
 
-.ssd .titlebar.default-decoration button.titlebutton:hover {
+button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
+    background-image: none;
+    background-color: #A8403E;
+    color: white;
+}
+
+button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action),
+button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
+    background-image: none;
     background-color: rgba(40, 40, 40, 0.1);
 }
 
-.ssd .titlebar.default-decoration button.titlebutton:hover:active,
-.ssd .titlebar.default-decoration button.titlebutton:active {
+button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action),
+button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
+    background-image: none;
+    background-color: rgba(40, 40, 40, 0.06);
+}
+
+button.minimize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action),
+button.maximize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action),
+button.close.titlebutton:backdrop:not(.suggested-action):not(.destructive-action) {
+    opacity: 1;
+    color: rgba(40, 40, 40, 0.5);
+    background-image: none;
+    background: none;
+    background-color: transparent;
+}
+
+button.minimize.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action),
+button.maximize.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action),
+button.close.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action) {
+    color: rgba(40, 40, 40, 0.5);
     background-color: rgba(40, 40, 40, 0.05);
 }
 
-.ssd .titlebar.default-decoration button.titlebutton:backdrop {
-    background-color: rgba(40, 40, 40, 0.05);
-    color: rgba(40, 40, 40, 0.5);
-}
-
-.ssd .titlebar.default-decoration button.titlebutton:backdrop:hover {
-    background-color: rgba(40, 40, 40, 0.05);
-    color: rgba(40, 40, 40, 0.5);
-}
-
-.default-decoration .title {
-    color: #252525;
-}
-
-.default-decoration .title:backdrop {
-    color: rgba(40, 40, 40, 0.5);
+.selection-mode headerbar button.titlebutton:backdrop,
+.selection-mode .titlebar button.titlebutton:backdrop,
+headerbar.selection-mode button.titlebutton:backdrop,
+.titlebar.selection-mode button.titlebutton:backdrop {
+    -gtk-icon-shadow: none;
 }
 
 

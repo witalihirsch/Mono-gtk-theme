@@ -806,6 +806,16 @@ stage {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.calendar .calendar-month-header .pager-button:focus:hover {
+    transition: 200ms;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendar .calendar-month-header .pager-button:focus:active {
+    transition: 200ms;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .calendar .calendar-day-base {
     text-align: center;
     margin: 2px;
@@ -2113,12 +2123,24 @@ StScrollBar StButton#hhandle:active {
     margin: 5px;
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child,
+.hotplug-notification-item:last-child,
+.notification-banner .notification-button:last-child {
+    background-color: #c34c4a;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:hover,
 .hotplug-notification-item:hover,
 .notification-banner .notification-button:hover {
     transition: 200ms;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-dialog .modal-dialog-linked-button:last-child:hover {
+    background-color: #d65451;
+    color: white;
 }
 
 .modal-dialog .modal-dialog-linked-button:active,
@@ -2129,6 +2151,11 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child:active {
+    background-color: #a8403e;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:checked,
 .hotplug-notification-item:checked,
 .notification-banner .notification-button:checked {
@@ -2137,16 +2164,31 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child:checked {
+    background-color: #d65451;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:checked:hover,
 .hotplug-notification-item:checked:hover,
 .notification-banner .notification-button:checked:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child:checked:hover {
+    background-color: #d65451;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:checked:active,
 .hotplug-notification-item:checked:active,
 .notification-banner .notification-button:checked:active {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-dialog .modal-dialog-linked-button:last-child:checked:active {
+    background-color: #a8403e;
+    color: white;
 }
 
 .modal-dialog .modal-dialog-linked-button:focus,
@@ -2158,6 +2200,11 @@ StScrollBar StButton#hhandle:active {
     box-shadow: none;
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child:focus {
+    background-color: #d65451;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:focus:hover,
 .hotplug-notification-item:focus:hover,
 .notification-banner .notification-button:focus:hover {
@@ -2165,11 +2212,21 @@ StScrollBar StButton#hhandle:active {
     box-shadow: none;
 }
 
+.modal-dialog .modal-dialog-linked-button:last-child:focus:hover {
+    background-color: #d65451;
+    color: white;
+}
+
 .modal-dialog .modal-dialog-linked-button:focus:active,
 .hotplug-notification-item:focus:active,
 .notification-banner .notification-button:focus:active {
     background-color: rgba(255, 255, 255, 0.05);
     box-shadow: none;
+}
+
+.modal-dialog .modal-dialog-linked-button:last-child:focus:active {
+    background-color: #a8403e;
+    color: white;
 }
 
 .modal-dialog .modal-dialog-linked-button:insensitive,
@@ -4701,7 +4758,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-toggle:checked {
-    transition-duration: 100ms;
+    transition: 0.1s;
     background-color: #1b82b3;
     color: white;
 }
@@ -4757,6 +4814,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
+    transition: 0.1s;
     background-color: rgba(255, 255, 255, 0);
     padding: 8px;
 }
