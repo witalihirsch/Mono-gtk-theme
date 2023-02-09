@@ -5,14 +5,14 @@ The theme is still developing and it would be nice if you reported all the bugs 
 ## Support
 <div>
     <a href="https://www.patreon.com/witalihirsch">
-        <img src="images/patreon.png" height="60px" >
+        <img src="images/patreon.png" width="250px" >
     </a>
 </div>
 
 ## Mono Project Preview
 <div>
     <a href="https://witalihirsch.github.io/mono.html">
-        <img src="images/monoproject.png" height="120px" >
+        <img src="images/monoproject.png" width="300px" >
     </a>
 </div> 
 
