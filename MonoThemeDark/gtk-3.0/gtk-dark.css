@@ -10170,6 +10170,10 @@ popover.background.magnifier,
 /*GEDIT*/
 
 
+.gedit-search-slider .linked:not(.vertical) > entry {
+  background-color: #333333;
+}
+
 .gedit-search-slider {
     background: transparent;
     border: 1px solid transparent;
@@ -10463,33 +10467,61 @@ XfdesktopIconView.view .rubberband {
 
 
 window.background.chromium {
-    background-color: #252525;
+  background-color: #252525;
 }
 
 window.background.chromium entry,
-window.background.chromium>button {
-    border-color: rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.05);
+window.background.chromium > button {
+  border: 1px solid #252525;
 }
 
-window.background.chromium entry.chromium,
-window.background.chromium entry.chromium:focus {
-    border-image: none;
-    color: white;
+window.background.chromium > button {
+  color: white;
 }
 
-window.background.chromium>textview.view,
-window.background.chromium textview {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: white;
+window.background.chromium > button:disabled {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-window.background.chromium>menubar {
-    background-color: #333333;
+window.background.chromium menubar, window.background.chromium headerbar {
+  color: white;
+}
+
+window.background.chromium menu {
+  padding: 0;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
 }
 
 window.background.chromium menu menuitem {
-    border-radius: 0;
+  border-radius: 0;
+}
+
+window.background.chromium headerbar {
+  padding: 0 12px;
+}
+
+window.background.chromium spinner {
+  color: #1b82b3;
+}
+
+window.background.chromium textview.view {
+  background-color: transparent;
+}
+
+window.background.chromium treeview.view.cell:selected:focus {
+  background-color: #1b82b3;
+  color: white;
+}
+
+window.background.chromium treeview.view button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #252525;
+}
+
+tooltip.background.chromium {
+  color: white;
+  background-color: #333333;
 }
 
 
