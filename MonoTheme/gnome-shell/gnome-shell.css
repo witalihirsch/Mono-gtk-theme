@@ -682,17 +682,17 @@ stage {
 .datemenu-today-button:focus {
     transition: 200ms;
     color: #252525;
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.05);
     box-shadow: none;
 }
 
 .datemenu-today-button:focus:hover {
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 
 .datemenu-today-button:focus:active {
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.05);
     box-shadow: none;
 }
 
@@ -786,7 +786,7 @@ stage {
 
 .calendar .calendar-month-header .pager-button:focus {
     transition: 200ms;
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .calendar .calendar-day-base {
@@ -817,7 +817,7 @@ stage {
 }
 
 .calendar .calendar-day-base:focus {
-    background-color: transparent;
+    background-color: rgba(40, 40, 40, 0.05);
     color: #252525;
     box-shadow: none;
     transition: 200ms;
@@ -928,7 +928,7 @@ stage {
 .events-button:focus {
     transition: 200ms;
     color: #252525;
-    background-color: rgba(40, 40, 40, 0.05);
+    background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 
@@ -989,7 +989,7 @@ stage {
 .world-clocks-button:focus {
     transition: 200ms;
     color: #252525;
-    background-color: rgba(40, 40, 40, 0.05);
+    background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 
@@ -1064,7 +1064,7 @@ stage {
 .weather-button:focus {
     transition: 200ms;
     color: #252525;
-    background-color: rgba(40, 40, 40, 0.05);
+    background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 
@@ -2137,7 +2137,7 @@ StScrollBar StButton#hhandle:active {
 .notification-banner .notification-button:focus {
     transition: 200ms;
     color: #252525;
-    background-color: rgba(40, 40, 40, 0.05);
+    background-color: rgba(40, 40, 40, 0.1);
     box-shadow: none;
 }
 

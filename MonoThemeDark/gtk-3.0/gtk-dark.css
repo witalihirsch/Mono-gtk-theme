@@ -10977,3 +10977,6 @@ sq_button.small {
 /*evolution*/
 @define-color theme_fg_color white;
 @define-color theme_base_color #252525;
+
+/*bg of selections*/
+@define-color theme_selected_bg_color #1b82b3;
