@@ -11,11 +11,12 @@ The theme is still developing and it would be nice if you reported all the bugs 
 
 ## Mono Project Preview
 <div>
-    <a href="https://www.patreon.com/witalihirsch">
+    <a href="https://witalihirsch.github.io/mono.html">
         <img src="images/monoproject.png" height="120px" >
     </a>
 </div> 
 
+## Mono Theme for Gnome
 <p align="center"><b>Gtk4 apps</b></p>
 <p align="center">
   <img alt="apps" src="images/gtk4.png">
