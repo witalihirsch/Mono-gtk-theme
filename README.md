@@ -12,7 +12,7 @@ The theme is still developing and it would be nice if you reported all the bugs 
 ## Mono Project Preview
 <div>
     <a href="https://www.patreon.com/witalihirsch">
-        <img src="images/monoproject.png" height="100px" >
+        <img src="images/monoproject.png" height="120px" >
     </a>
 </div> 
 
