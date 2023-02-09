@@ -10,7 +10,11 @@ The theme is still developing and it would be nice if you reported all the bugs 
 </div>
 
 ## Mono Project Preview
-[Mono Project Preview.](https://witalihirsch.github.io/mono.html) Work in progress.
+<div>
+    <a href="https://www.patreon.com/witalihirsch">
+        <img src="images/monoproject.png" height="100px" >
+    </a>
+</div> 
 
 <p align="center"><b>Gtk4 apps</b></p>
 <p align="center">
