@@ -42,6 +42,17 @@ The theme is still developing and it would be nice if you reported all the bugs 
     <img alt="apps" src="images/gnome-shell.png">
 </p>
 
+## Wallpapers 
+<p align="center"><b>Light</b></p>
+<p align="center">
+    <img alt="apps" src="images/bg/Mono.png">
+</p>
+
+<p align="center"><b>Dark</b></p>
+<p align="center">
+    <img alt="apps" src="images/bg/MonoDark.png">
+</p>
+
 ## Download
 Download theme [here.](https://github.com/witalihirsch/Mono-gtk-theme/releases)
 
