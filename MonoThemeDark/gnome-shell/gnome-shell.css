@@ -2123,9 +2123,7 @@ StScrollBar StButton#hhandle:active {
     margin: 5px;
 }
 
-.modal-dialog .modal-dialog-linked-button:last-child,
-.hotplug-notification-item:last-child,
-.notification-banner .notification-button:last-child {
+.modal-dialog .modal-dialog-linked-button:last-child {
     background-color: #c34c4a;
     color: white;
 }
