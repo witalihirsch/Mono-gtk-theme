@@ -4142,7 +4142,7 @@ headerbar.default-decoration {
 .default-decoration.titlebar:not(headerbar) button.titlebutton,
 headerbar.default-decoration button.titlebutton {
     border-radius: 100%;
-    background-color: rgba(40, 40, 40 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
     min-height: 24px;
     min-width: 24px;
     margin: 0 4px 0 4px;
@@ -4152,23 +4152,23 @@ headerbar.default-decoration button.titlebutton {
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton:hover,
 headerbar.default-decoration button.titlebutton:hover {
-    background-color: rgba(40, 40, 40 0.1);
+    background-color: rgba(40, 40, 40, 0.1);
 }
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton:active,
 headerbar.default-decoration button.titlebutton:hover:active,
 headerbar.default-decoration button.titlebutton:active {
-    background-color: rgba(40, 40, 40 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton:backdrop,
 headerbar.default-decoration button.titlebutton:backdrop {
-    background-color: rgba(40, 40, 40 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton:backdrop:hover,
 headerbar.default-decoration button.titlebutton:backdrop:hover {
-    background-color: rgba(40, 40, 40 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
 }
 
 .titlebar:not(headerbar) separator.titlebutton,
@@ -4345,7 +4345,7 @@ headerbar>.stack-switcher.linked>button:not(:only-child):not(:last-child):not(:b
 headerbar.selection-mode button:hover:backdrop,
 .titlebar.selection-mode button:hover:backdrop {
     color: rgba(40, 40, 40, 0.5);
-    background-color: rgba(40, 40, 40 0.05);
+    background-color: rgba(40, 40, 40, 0.05);
     text-shadow: none;
     -gtk-icon-shadow: none;
 }
@@ -7629,7 +7629,7 @@ button.osd:hover {
 button.osd:active {
     color: #252525;
     border-color: transparent;
-    background-color: rgba(200, 200, 200, 0.7)
+    background-color: rgba(200, 200, 200, 0.7);
     background-clip: padding-box;
     outline-color: transparent;
     border: none;
