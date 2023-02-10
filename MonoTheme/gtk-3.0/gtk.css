@@ -9802,6 +9802,19 @@ headerbar.selection-mode button.titlebutton:backdrop,
 
 
 
+/*TERMINATOR*/
+
+
+.terminator-terminal-window paned > separator {
+  background-color: #f0f0f0;
+}
+
+.terminator-terminal-window notebook.frame {
+  border-style: none;
+}
+
+
+
 /*FILES*/
 
 
