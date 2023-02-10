@@ -926,7 +926,7 @@ switch {
     transition-property: outline, outline-width, outline-offset, outline-color;
     transition-duration: 300ms;
     animation-timing-function: ease-in-out;
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
     border-radius: 9999px;
     background-color: transparent;
     background-clip: padding-box;
@@ -947,12 +947,12 @@ switch:focus:focus-visible {
 }
 
 switch:hover:not(:checked) {
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
     background-image: image(rgba(40, 40, 40, 0.25));
 }
 
 switch:checked {
-    animation: switch_ripple_effect 0.3s cubic-bezier(40, 40, 40.2, 1);
+    animation: switch_ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1);
     background-color: transparent;
     color: transparent;
     box-shadow: none;
@@ -961,17 +961,17 @@ switch:checked {
 }
 
 switch:checked:hover {
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
     background-image: image(#2094c9);
 }
 
 switch:backdrop {
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
     background-image: image(rgba(40, 40, 40, 0.1));
 }
 
 switch:backdrop:checked {
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
     background-image: image(rgba(40, 40, 40, 0.3));
 }
 
@@ -985,7 +985,7 @@ switch>image {
 
 switch slider {
     box-shadow: none;
-    transition: all 150ms cubic-bezier(40, 40, 40.2, 1), box-shadow 150ms cubic-bezier(40, 40, 40.2, 1), margin 0;
+    transition: all 150ms cubic-bezier(40, 40, 40, 1), box-shadow 150ms cubic-bezier(40, 40, 40, 1), margin 0;
     background-color: rgba(255, 255, 255, 1);
     min-width: 20px;
     min-height: 20px;
@@ -1986,7 +1986,7 @@ menubar>menuitem,
 .menubar>menuitem {
     min-height: 16px;
     color: #252525;
-    transition: all 200ms cubic-bezier(40, 40, 40.2, 1);
+    transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
     padding: 8px 10px;
     border: none;
     border-radius: 6px;
