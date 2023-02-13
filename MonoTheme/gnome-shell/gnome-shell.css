@@ -2929,6 +2929,7 @@ StEntry StLabel.hint-text {
 }
 
 .app-folder-dialog {
+    padding: 5px;
     border-radius: 32px;
     background-color: #252525;
 }
@@ -3017,7 +3018,7 @@ StWidget.focused .app-well-app-running-dot {
 .page-indicator .page-indicator-icon {
     width: 12px;
     height: 12px;
-    border-radius: 12px;
+    border-radius: 100%;
     margin: 0;
     padding: 0;
     background-image: none;
@@ -3076,11 +3077,11 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .page-navigation-arrow>StIcon {
-    margin: 6px;
-    padding: 18px;
+    margin: 0px;
+    padding: 15px;
     width: 24px;
     height: 24px;
-    border-radius: 99px;
+    border-radius: 100%;
 }
 
 .page-navigation-arrow:insensitive>StIcon {
