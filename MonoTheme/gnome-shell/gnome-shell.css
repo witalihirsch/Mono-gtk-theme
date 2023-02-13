@@ -3018,7 +3018,7 @@ StWidget.focused .app-well-app-running-dot {
 .page-indicator .page-indicator-icon {
     width: 12px;
     height: 12px;
-    border-radius: 100%;
+    border-radius: 12px;
     margin: 0;
     padding: 0;
     background-image: none;
@@ -3081,7 +3081,7 @@ StWidget.focused .app-well-app-running-dot {
     padding: 15px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
+    border-radius: 99px;
 }
 
 .page-navigation-arrow:insensitive>StIcon {
