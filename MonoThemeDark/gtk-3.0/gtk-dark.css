@@ -9793,12 +9793,13 @@ headerbar.selection-mode button.titlebutton:backdrop,
 /*TERMINATOR*/
 
 
-.terminator-terminal-window paned > separator {
-  background-color: #252525;
+.terminator-terminal-window paned>separator {
+    background-color: #252525;
 }
 
 .terminator-terminal-window notebook.frame {
-  border-style: none;
+    border: 1px solid #252525;
+    background-color: #252525;
 }
 
 

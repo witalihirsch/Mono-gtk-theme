@@ -315,7 +315,7 @@ label.terminal {
 
 
 cell {
-  border-color: rgba(40, 40, 40, 0.1);
+    border-color: rgba(40, 40, 40, 0.1);
 }
 
 
@@ -976,7 +976,7 @@ switch:backdrop:checked {
 }
 
 switch:disabled {
-    background-image: image(rgba(40, 40, 40, 0.1));   
+    background-image: image(rgba(40, 40, 40, 0.1));
 }
 
 switch>image {
@@ -2227,7 +2227,7 @@ messagedialog.csd .titlebar {
     border-bottom: none;
 }
 
-messagedialog.csd.background  {
+messagedialog.csd.background {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border: 1px solid rgba(40, 40, 40, 0.1);
@@ -3359,7 +3359,7 @@ combobox>.linked:not(.vertical)>entry:hover {
 }
 
 dropdown>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop,
-combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop, 
+combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:backdrop,
 dropdown>.linked:not(.vertical)>entry:not(:only-child):first-child:disabled,
 combobox>.linked:not(.vertical)>entry:not(:only-child):first-child:disabled {
     transition: 200ms;
@@ -3786,7 +3786,7 @@ popover.background .menuitem.button.flat:backdrop:hover {
     color: #252525;
 }
 
-popover.menu>stack { 
+popover.menu>stack {
     margin: -6px;
 }
 
@@ -3949,7 +3949,7 @@ headerbar.selection-mode button.toggle:active {
     background-color: rgba(40, 40, 40, 0.05);
     box-shadow: none;
     text-shadow: none;
-    -gtk-icon-shadow: none; 
+    -gtk-icon-shadow: none;
 }
 
 .selection-mode .titlebar:not(headerbar) button:checked,
@@ -4925,7 +4925,7 @@ headerbar button.text-button:active:not(.suggested-action):not(.destructive-acti
     background-color: rgba(40, 40, 40, 0.05);
     box-shadow: none;
     text-shadow: none;
-    -gtk-icon-shadow: none; 
+    -gtk-icon-shadow: none;
 }
 
 .org-gnome-Calendar .titlebar .text-button:checked,
@@ -6891,7 +6891,7 @@ headerbar button.suggested-action:active:not(.titlebutton),
     background-color: #196b93;
     box-shadow: none;
     text-shadow: none;
-    -gtk-icon-shadow: none;   
+    -gtk-icon-shadow: none;
 }
 
 popover.background button.suggested-action:checked,
@@ -8138,9 +8138,7 @@ cursor-handle.top:dir(rtl) {
 }
 
 cursor-handle.insertion-cursor:dir(ltr),
-cursor-handle.insertion-cursor:dir(rtl) {
-    
-}
+cursor-handle.insertion-cursor:dir(rtl) {}
 
 cursor-handle.top:dir(ltr),
 cursor-handle.bottom:dir(rtl) {
@@ -8153,9 +8151,7 @@ cursor-handle.top:dir(rtl) {
 }
 
 cursor-handle.insertion-cursor:dir(ltr),
-cursor-handle.insertion-cursor:dir(rtl) {
-
-}
+cursor-handle.insertion-cursor:dir(rtl) {}
 
 
 
@@ -9805,12 +9801,13 @@ headerbar.selection-mode button.titlebutton:backdrop,
 /*TERMINATOR*/
 
 
-.terminator-terminal-window paned > separator {
-  background-color: #f0f0f0;
+.terminator-terminal-window paned>separator {
+    background-color: #f0f0f0;
 }
 
 .terminator-terminal-window notebook.frame {
-  border-style: none;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 
@@ -10147,8 +10144,8 @@ popover.background.magnifier,
 /*GEDIT*/
 
 
-.gedit-search-slider .linked:not(.vertical) > entry {
-  background-color: white;
+.gedit-search-slider .linked:not(.vertical)>entry {
+    background-color: white;
 }
 
 .gedit-search-slider {
@@ -10444,61 +10441,62 @@ XfdesktopIconView.view .rubberband {
 
 
 window.background.chromium {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 window.background.chromium entry,
-window.background.chromium > button {
-  border: 1px solid #f0f0f0;
+window.background.chromium>button {
+    border: 1px solid #f0f0f0;
 }
 
-window.background.chromium > button {
-  color: #252525;
+window.background.chromium>button {
+    color: #252525;
 }
 
-window.background.chromium > button:disabled {
-  color: rgba(40, 40, 40, 0.5);
+window.background.chromium>button:disabled {
+    color: rgba(40, 40, 40, 0.5);
 }
 
-window.background.chromium menubar, window.background.chromium headerbar {
-  color: #252525;
+window.background.chromium menubar,
+window.background.chromium headerbar {
+    color: #252525;
 }
 
 window.background.chromium menu {
-  padding: 0;
-  border-color: rgba(40, 40, 40, 0.1);
-  box-shadow: none;
+    padding: 0;
+    border-color: rgba(40, 40, 40, 0.1);
+    box-shadow: none;
 }
 
 window.background.chromium menu menuitem {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 window.background.chromium headerbar {
-  padding: 0 12px;
+    padding: 0 12px;
 }
 
 window.background.chromium spinner {
-  color: #1b82b3;
+    color: #1b82b3;
 }
 
 window.background.chromium textview.view {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 window.background.chromium treeview.view.cell:selected:focus {
-  background-color: #1b82b3;
-  color: white;
+    background-color: #1b82b3;
+    color: white;
 }
 
 window.background.chromium treeview.view button {
-  border: 1px solid rgba(40, 40, 40, 0.1);
-  background-color: #f0f0f0;
+    border: 1px solid rgba(40, 40, 40, 0.1);
+    background-color: #f0f0f0;
 }
 
 tooltip.background.chromium {
-  color: #252525;
-  background-color: white;
+    color: #252525;
+    background-color: white;
 }
 
 
