@@ -4742,6 +4742,53 @@ StWidget.focused .app-well-app-running-dot {
 /*QUICK SETTINGS*/
 
 
+.quick-toggle,
+.quick-menu-toggle .quick-toggle-arrow {
+    icon-size: 1.09em;
+    transition: 0.1s;
+    background-color: rgba(40, 40, 40, 0.05) !important;
+    padding: 8px;
+    border: none;
+}
+
+.quick-toggle:hover,
+.quick-menu-toggle .quick-toggle-arrow:hover,
+.quick-menu-toggle:hover .quick-toggle-arrow {
+    transition: 0.1s;
+    background-color: rgba(40, 40, 40, 0.1) !important;
+    border: none;
+}
+
+
+.quick-toggle:checked,
+.quick-menu-toggle:checked,
+.quick-menu-toggle .quick-toggle-arrow:checked {
+    transition: 0.1s;
+    background-color: #1b82b3 !important;
+    color: white;
+}
+
+.quick-toggle:checked:hover,
+.quick-menu-toggle .quick-toggle-arrow:checked:hover,
+.quick-menu-toggle:checked:hover .quick-toggle-arrow {
+    transition: 0.1s;
+    background-color: #2094c9 !important;
+    border: none;
+}
+
+
+
+.quick-toggle-arrow:ltr {
+    border-radius: 0 12px 12px 0;
+    border-left-width: 0;
+}
+
+.quick-toggle-arrow:rtl {
+    border-radius: 12px 0 0 12px;
+    border-right-width: 0;
+}
+
+
 .quick-settings {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -4754,38 +4801,13 @@ StWidget.focused .app-well-app-running-dot {
     spacing-columns: 12px;
 }
 
-.quick-toggle {
+.quick-toggle,
+.quick-menu-toggle {
     border-radius: 12px;
     min-width: 11.5em;
     max-width: 11.5em;
     min-height: 44px;
-}
 
-.quick-toggle:checked {
-    transition: 0.1s;
-    background-color: #1b82b3;
-    color: white;
-}
-
-.quick-toggle:checked:focus {
-    box-shadow: none;
-}
-
-.quick-toggle:checked:hover,
-.quick-toggle:checked:focus {
-    background-color: #2094c9;
-    color: white;
-}
-
-.quick-toggle:checked:active {
-    background-color: #196b93;
-    color: white;
-}
-
-.quick-toggle:checked:insensitive {
-    transition-duration: 100ms;
-    background-color: rgba(27, 130, 179, 0.5);
-    color: rgba(255, 255, 255, 0.5);
 }
 
 .quick-toggle>StBoxLayout {
@@ -4800,40 +4822,99 @@ StWidget.focused .app-well-app-running-dot {
     padding: 0 12px;
 }
 
+.quick-toggle:ltr>StBoxLayout {
+    padding-right: 0;
+}
+
+.quick-toggle:rtl>StBoxLayout {
+    padding-left: 0;
+}
+
 .quick-toggle .quick-toggle-label {
     font-weight: bold;
 }
 
-.quick-toggle .quick-toggle-icon,
-.quick-toggle .quick-toggle-arrow {
+/* .quick-toggle-menu {
+    background-color: #e8e8e8;
+    color: #252525;
+    border-radius: 12px;
+    padding: 16.5px;
+    margin: 0 16.5px;
+} */
+
+.quick-toggle-menu .header {
+    spacing-rows: 3px;
+    spacing-columns: 12px;
+    padding-bottom: 12px;
+}
+
+.quick-toggle-menu .header .icon {
+    icon-size: 1.635em;
+    border-radius: 999px;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quick-toggle-menu .header .icon.active {
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+.quick-toggle-menu-container {
+    padding: 12px 6px 0;
+}
+
+.quick-toggle:checked:focus {
+    box-shadow: none;
+}
+
+/*.quick-toggle:checked:hover,
+.quick-toggle:checked:focus {
+    background-color: #2094c9;
+    color: white;
+}
+*/
+.quick-toggle:checked:active {
+    background-color: #196b93;
+    color: white;
+}
+
+.quick-toggle:checked:insensitive {
+    transition-duration: 100ms;
+    background-color: rgba(27, 130, 179, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.quick-toggle .quick-toggle-icon {
     icon-size: 1.09em;
 }
 
-.quick-menu-toggle:ltr>StBoxLayout {
-    padding-right: 0;
+.quick-menu-toggle .quick-toggle {
+    min-width: auto;
+    max-width: auto;
 }
 
-.quick-menu-toggle:rtl>StBoxLayout {
-    padding-left: 0;
+
+
+
+.quick-menu-toggle .quick-toggle:ltr {
+    border-radius: 12px 0 0 12px;
+
 }
 
-.quick-menu-toggle .quick-toggle-arrow {
-    transition: 0.1s;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 8px;
-}
-
-.quick-menu-toggle:hover .quick-toggle-arrow {
-    background-color: rgba(40, 40, 40, 0.05);
-}
-
-.quick-menu-toggle .quick-toggle-arrow:ltr {
+.quick-menu-toggle .quick-toggle:rtl {
     border-radius: 0 12px 12px 0;
 }
 
-.quick-menu-toggle .quick-toggle-arrow:rtl {
-    border-radius: 12px 0 0 12px;
+.quick-menu-toggle .quick-toggle:ltr:last-child {
+    border-radius: 12px;
+
 }
+
+.quick-menu-toggle .quick-toggle:rtl:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
 
 .quick-slider {
     padding: 0 6px;
@@ -4851,7 +4932,7 @@ StWidget.focused .app-well-app-running-dot {
 
 .quick-slider .slider-bin:focus {
     transition-duration: 100ms;
-    color: #252525;
+    color: white;
     background-color: transparent;
     box-shadow: none;
 }
@@ -4874,34 +4955,7 @@ StWidget.focused .app-well-app-running-dot {
     background-color: transparent;
 }
 
-.quick-toggle-menu {
-    background-color: #e8e8e8;
-    color: #252525;
-    border-radius: 12px;
-    padding: 16.5px;
-    margin: 0 16.5px;
-}
 
-.quick-toggle-menu .header {
-    spacing-rows: 3px;
-    spacing-columns: 12px;
-    padding-bottom: 12px;
-}
-
-.quick-toggle-menu .header .icon {
-    icon-size: 1.635em;
-    border-radius: 999px;
-    padding: 9px;
-    background-color: rgba(40, 40, 40, 0.1);
-}
-
-.quick-toggle-menu .header .icon.active {
-    background-color: rgba(40, 40, 40, 0.1);
-}
-
-.quick-toggle-menu-container {
-    padding: 12px 6px 0;
-}
 
 .quick-settings-system-item>StBoxLayout {
     spacing: 12px;
@@ -4919,13 +4973,16 @@ StWidget.focused .app-well-app-running-dot {
 .quick-settings-system-item .power-item:insensitive {
     transition-duration: 100ms;
     color: white;
-    background-color: rgba(40, 40, 40, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     background-color: transparent;
 }
 
 .nm-network-item .wireless-secure-icon {
     icon-size: 0.545em;
 }
+
+
+
 
 
 /*ICON BUTTON IN QUICK SETTINGS*/
