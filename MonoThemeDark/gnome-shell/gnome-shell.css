@@ -212,6 +212,7 @@ stage {
     font-weight: bold;
     height: 2.2em;
     transition-duration: 250ms;
+    box-shadow: none;
 }
 
 #panel.unlock-screen,
@@ -4754,7 +4755,6 @@ StWidget.focused .app-well-app-running-dot {
     border: none;
 }
 
-
 .quick-toggle:checked,
 .quick-menu-toggle:checked,
 .quick-menu-toggle .quick-toggle-arrow:checked {
@@ -4771,8 +4771,6 @@ StWidget.focused .app-well-app-running-dot {
     border: none;
 }
 
-
-
 .quick-toggle-arrow:ltr {
     border-radius: 0 12px 12px 0;
     border-left-width: 0;
@@ -4782,7 +4780,6 @@ StWidget.focused .app-well-app-running-dot {
     border-radius: 12px 0 0 12px;
     border-right-width: 0;
 }
-
 
 .quick-settings {
     padding-top: 24px;
@@ -4802,7 +4799,6 @@ StWidget.focused .app-well-app-running-dot {
     min-width: 11.5em;
     max-width: 11.5em;
     min-height: 44px;
-
 }
 
 .quick-toggle>StBoxLayout {
@@ -4828,8 +4824,6 @@ StWidget.focused .app-well-app-running-dot {
 .quick-toggle .quick-toggle-label {
     font-weight: bold;
 }
-
-
 
 .quick-toggle-menu .header {
     spacing-rows: 3px;
@@ -4873,7 +4867,6 @@ StWidget.focused .app-well-app-running-dot {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
 .quick-toggle .quick-toggle-icon {
     icon-size: 1.09em;
 }
@@ -4882,9 +4875,6 @@ StWidget.focused .app-well-app-running-dot {
     min-width: auto;
     max-width: auto;
 }
-
-
-
 
 .quick-menu-toggle .quick-toggle:ltr {
     border-radius: 12px 0 0 12px;
@@ -4903,7 +4893,6 @@ StWidget.focused .app-well-app-running-dot {
 .quick-menu-toggle .quick-toggle:rtl:last-child {
     border-radius: 0 12px 12px 0;
 }
-
 
 .quick-slider {
     padding: 0 6px;
@@ -4943,8 +4932,6 @@ StWidget.focused .app-well-app-running-dot {
 .quick-slider .icon-button {
     background-color: transparent;
 }
-
-
 
 .quick-settings-system-item>StBoxLayout {
     spacing: 12px;
