@@ -4825,6 +4825,13 @@ StWidget.focused .app-well-app-running-dot {
     font-weight: bold;
 }
 
+.quick-toggle-menu{
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px;
+  border: 1px rgba(255, 255, 255, 0.1);
+}
+
 .quick-toggle-menu .header {
     spacing-rows: 3px;
     spacing-columns: 12px;
@@ -4839,7 +4846,28 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-toggle-menu .header .icon.active {
-    background-color: rgba(255, 255, 255, 0.1);
+  color: white;  
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quick-toggle-menu .popup-menu-item {
+  border-radius: 10px !important;
+}
+
+.quick-toggle-menu .popup-menu-item:focus,
+.quick-toggle-menu .popup-menu-item:hover,
+.quick-toggle-menu .popup-menu-item.selected {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+.quick-toggle-menu .popup-menu-item:active {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.quick-toggle-menu .popup-menu-item>StIcon {
+   st-icon-style: symbolic;
 }
 
 .quick-toggle-menu-container {
