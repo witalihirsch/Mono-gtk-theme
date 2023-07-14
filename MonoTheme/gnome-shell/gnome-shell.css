@@ -1514,6 +1514,7 @@ StScrollBar StButton#hhandle:active {
 
 .screenshot-ui-show-pointer-button,
 .screenshot-ui-type-button {
+    color: #252525;
     transition: 200ms;
     background-color: transparent;
     background-color: none;
@@ -4805,6 +4806,7 @@ StWidget.focused .app-well-app-running-dot {
     min-width: 11.5em;
     max-width: 11.5em;
     min-height: 44px;
+
 }
 
 .quick-toggle>StBoxLayout {
@@ -4831,13 +4833,13 @@ StWidget.focused .app-well-app-running-dot {
     font-weight: bold;
 }
 
-/* .quick-toggle-menu {
-    background-color: #e8e8e8;
-    color: #252525;
+.quick-toggle-menu{
+    color: #252525 !important;
+    background-color: #e8e8e8 !important;
     border-radius: 12px;
-    padding: 16.5px;
-    margin: 0 16.5px;
-} */
+  
+}
+
 
 .quick-toggle-menu .header {
     spacing-rows: 3px;
@@ -4853,7 +4855,28 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .quick-toggle-menu .header .icon.active {
+    color: #252525;
     background-color: rgba(40, 40, 40, 0.1);
+}
+
+.quick-toggle-menu .popup-menu-item {
+  border-radius: 10px !important;
+}
+
+.quick-toggle-menu .popup-menu-item:focus,
+.quick-toggle-menu .popup-menu-item:hover,
+.quick-toggle-menu .popup-menu-item.selected {
+  color: #252525 !important;
+  background-color: rgba(40, 40, 40, 0.1) !important;
+}
+
+.quick-toggle-menu .popup-menu-item:active {
+  color: #252525 !important;
+  background-color: rgba(40, 40, 40, 0.2) !important;
+}
+
+.quick-toggle-menu .popup-menu-item>StIcon {
+  -st-icon-style: symbolic;
 }
 
 .quick-toggle-menu-container {
@@ -4870,6 +4893,7 @@ StWidget.focused .app-well-app-running-dot {
     color: white;
 }
 */
+
 .quick-toggle:checked:active {
     background-color: #196b93;
     color: white;
@@ -4880,6 +4904,7 @@ StWidget.focused .app-well-app-running-dot {
     background-color: rgba(27, 130, 179, 0.5);
     color: rgba(255, 255, 255, 0.5);
 }
+
 
 .quick-toggle .quick-toggle-icon {
     icon-size: 1.09em;
